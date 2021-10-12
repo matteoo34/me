@@ -1,0 +1,85 @@
+/* Import fonts */
+
+@font-face {
+	font-family: "Circular Std Black";
+	src: url("../fonts/CircularStdBlack.woff") format("woff")
+}
+@font-face {
+	font-family: "Circular Std Medium";
+	src: url("../fonts/CircularStdMedium.woff") format("woff")
+}
+
+body {
+	background-color: #ddd;
+	font-family: "Circular Std Medium"
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	padding: 10px 20px;
+	position: fixed;
+	background-color: #7411f6;
+	color: #fff;
+	font-size: 20px
+}
+
+/* Content */
+
+.container {
+	min-height: 100vh;
+	padding: 70px 20px 20px 20px;
+	background-color: #fff
+}
+
+/* Current project container */
+
+.current {
+	margin-bottom: 30px;
+	padding: 20px 20px 10px 20px;
+	border-left: 5px solid #ffa406;
+	border-radius: 5px;
+	background-color: #fedb9b
+}
+
+/* Titles */
+
+h1, h4 {
+	font-weight: normal;
+	font-family: "Circular Std Black";
+	letter-spacing: -0.5px
+}
+.current h4 {color: #ffa406}
+
+/* Lists */
+
+ul {
+	list-style-type: none;
+	margin-bottom: 30px;
+	padding: 0 10px
+}
+ul:last-of-type {margin-bottom: 0}
+
+/* Links */
+
+a {
+	display: flex;
+	align-items: center;
+	margin: 8px 4px;
+	opacity: 0.75;
+	color: #000 !important;
+	text-decoration: none;
+	transition-duration: 0.2s
+}
+a:hover {
+	opacity: 1;
+	text-decoration: underline
+}
+
+a ion-icon {
+	min-width: 24px;
+	margin-right: 6px;
+	color: #000;
+	font-size: 20px
+}
