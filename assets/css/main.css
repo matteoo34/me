@@ -1,5 +1,4 @@
 /* Import fonts */
-
 @font-face {
 	font-family: "Circular Std Black";
 	src: url("../fonts/CircularStdBlack.woff") format("woff")
@@ -15,7 +14,6 @@ body {
 }
 
 /* Header */
-
 header {
 	width: 100%;
 	padding: 10px 20px;
@@ -26,7 +24,6 @@ header {
 }
 
 /* Content */
-
 .container {
 	min-height: 100vh;
 	padding: 70px 20px 20px 20px;
@@ -34,7 +31,6 @@ header {
 }
 
 /* Current project container */
-
 .current {
 	margin-bottom: 30px;
 	padding: 20px 20px 10px 20px;
@@ -44,7 +40,6 @@ header {
 }
 
 /* Titles */
-
 h1, h4 {
 	font-weight: normal;
 	font-family: "Circular Std Black";
@@ -53,7 +48,6 @@ h1, h4 {
 .current h4 {color: #ffa406}
 
 /* Lists */
-
 ul {
 	list-style-type: none;
 	margin-bottom: 30px;
