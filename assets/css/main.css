@@ -1,4 +1,7 @@
+/** Main styles **/
+
 /* Import fonts */
+
 @font-face {
 	font-family: "Circular Std Black";
 	src: url("../fonts/CircularStdBlack.woff") format("woff")
@@ -7,6 +10,10 @@
 	font-family: "Circular Std Medium";
 	src: url("../fonts/CircularStdMedium.woff") format("woff")
 }
+
+/* Text selection color */
+::-moz-selection {background-color: rgba(0, 0, 0, 0.2)}
+::selection {background-color: rgba(0, 0, 0, 0.2)}
 
 body {
 	background-color: #ddd;
@@ -20,7 +27,8 @@ header {
 	position: fixed;
 	background-color: #7411f6;
 	color: #fff;
-	font-size: 20px
+	font-size: 20px;
+	z-index: 1
 }
 
 /* Content */
@@ -58,9 +66,9 @@ ul:last-of-type {margin-bottom: 0}
 /* Links */
 
 a {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
-	margin: 8px 4px;
+	margin: 2px 4px;
 	opacity: 0.75;
 	color: #000 !important;
 	text-decoration: none;
