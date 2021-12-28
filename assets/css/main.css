@@ -12,8 +12,8 @@
 }
 
 /* Text selection color */
-::-moz-selection {background-color: rgba(0, 0, 0, 0.2)}
-::selection {background-color: rgba(0, 0, 0, 0.2)}
+::-moz-selection {background-color: rgba(0, 0, 0, .2)}
+::selection {background-color: rgba(0, 0, 0, .2)}
 
 body {
 	background-color: #ddd;
@@ -51,7 +51,7 @@ header {
 h1, h4 {
 	font-weight: normal;
 	font-family: "Circular Std Black";
-	letter-spacing: -0.5px
+	letter-spacing: -.5px
 }
 .current h4 {color: #ffa406}
 
@@ -69,10 +69,10 @@ a {
 	display: inline-flex;
 	align-items: center;
 	margin: 2px 4px;
-	opacity: 0.75;
+	opacity: .75;
 	color: #000 !important;
 	text-decoration: none;
-	transition-duration: 0.2s
+	transition-duration: .2s
 }
 a:hover {
 	opacity: 1;
@@ -84,4 +84,22 @@ a ion-icon {
 	margin-right: 6px;
 	color: #000;
 	font-size: 20px
+}
+
+/* CV download */
+.cv {
+	margin-top: 40px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 6px;
+	background-color: transparent;
+	text-decoration: none !important;
+	transition-duration: .2s
+}
+.cv:hover {background-color: #ddd}
+.cv:active {
+	background-color: #ccc;
+	-webkit-transform: scale(.9);
+	transform: scale(.9);
+	transition-duration: .1s
 }
