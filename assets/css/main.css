@@ -1,14 +1,13 @@
-/** Main styles **/
-
-/* Import fonts */
+/* Font import */
 
 @font-face {
 	font-family: "Circular Std Black";
-	src: url("../fonts/CircularStdBlack.woff") format("woff")
+	src: url("../fonts/CircularStdBlack.woff") format("woff");
 }
+
 @font-face {
 	font-family: "Circular Std Medium";
-	src: url("../fonts/CircularStdMedium.woff") format("woff")
+	src: url("../fonts/CircularStdMedium.woff") format("woff");
 }
 
 /* Text selection color */
@@ -16,26 +15,32 @@
 ::selection {background-color: rgba(0, 0, 0, .2)}
 
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
 	background-color: #ddd;
-	font-family: "Circular Std Medium"
+	font-family: "Circular Std Medium";
 }
 
-/* Header */
 header {
-	width: 100%;
 	padding: 10px 20px;
-	position: fixed;
+	top: 0;
+	position: sticky;
 	background-color: #7411f6;
 	color: #fff;
 	font-size: 20px;
-	z-index: 1
+	z-index: 1;
 }
 
-/* Content */
+header span {padding: 0 10px}
+
 .container {
-	min-height: 100vh;
-	padding: 70px 20px 20px 20px;
-	background-color: #fff
+	flex-grow: 1;
+	width: 65vw;
+	margin: 0 auto;
+	padding: 10px 20px 20px 20px;
+	background-color: #fff;
 }
 
 /* Current project container */
@@ -44,26 +49,23 @@ header {
 	padding: 20px 20px 10px 20px;
 	border-left: 5px solid #ffa406;
 	border-radius: 5px;
-	background-color: #fedb9b
+	background-color: #fedb9b;
 }
 
-/* Titles */
-h1, h4 {
-	font-weight: normal;
-	font-family: "Circular Std Black";
-	letter-spacing: -.5px
-}
 .current h4 {color: #ffa406}
 
-/* Lists */
+h2 {
+	font-weight: normal;
+	font-family: "Circular Std Black";
+	letter-spacing: -.5px;
+}
+
 ul {
 	list-style-type: none;
 	margin-bottom: 30px;
-	padding: 0 10px
+	padding: 0 10px;
 }
 ul:last-of-type {margin-bottom: 0}
-
-/* Links */
 
 a {
 	display: inline-flex;
@@ -72,18 +74,18 @@ a {
 	opacity: .75;
 	color: #000 !important;
 	text-decoration: none;
-	transition-duration: .2s
+	transition-duration: .2s;
 }
 a:hover {
 	opacity: 1;
-	text-decoration: underline
+	text-decoration: underline;
 }
 
 a ion-icon {
 	min-width: 24px;
 	margin-right: 6px;
 	color: #000;
-	font-size: 20px
+	font-size: 20px;
 }
 
 /* CV download */
@@ -94,12 +96,12 @@ a ion-icon {
 	border-radius: 6px;
 	background-color: transparent;
 	text-decoration: none !important;
-	transition-duration: .2s
+	transition-duration: .2s;
 }
 .cv:hover {background-color: #ddd}
 .cv:active {
 	background-color: #ccc;
 	-webkit-transform: scale(.9);
 	transform: scale(.9);
-	transition-duration: .1s
+	transition-duration: .1s;
 }
