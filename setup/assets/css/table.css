@@ -1,0 +1,81 @@
+table {
+	border-collapse: collapse;
+}
+
+table th {
+	padding: .25rem;
+	opacity: .75;
+	font-size: .75rem;
+	font-weight: 400;
+}
+
+table td:not(.type) {
+	height: 0;
+	border: 1px solid var(--black);
+}
+
+table .type {
+	padding: 0 .5rem;
+	opacity: .75;
+	font-size: .75rem;
+	text-align: end;
+}
+
+table .image {
+	padding: .5rem;
+}
+
+table .image img {
+	display: block;
+}
+
+table .model {
+	padding: .5rem;
+	background-color: var(--primary);
+}
+
+table .model .description {
+	font-size: .75rem;
+}
+
+table .pricing {
+	padding: .5rem;
+	background-color: var(--primary);
+}
+
+table .pricing .min, table .pricing .max {
+	font-size: .75rem;
+}
+
+table .pricing .current {
+	margin-bottom: .25rem;
+	font-size: 1.25rem;
+	font-weight: 900;
+}
+
+table .links {
+	padding: initial;
+}
+
+table .links div {
+	display: flex;
+	height: 100%;
+	background-color: var(--primary);
+}
+
+table .links .link {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	padding: 0 .5rem;
+	border-right: 1px solid var(--black);
+	color: var(--white);
+	transition-duration: .2s;
+}
+table .links .link:last-of-type {
+	border-right: none;
+}
+table .links .link:hover {
+	filter: brightness(80%);
+}
