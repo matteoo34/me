@@ -106,6 +106,18 @@ const setup = new Setup([
 			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Seagate-St4000dmz04-Barracuda-Disque-Interne-Argent/dp/B07D9C7SQH"),
 		],
 	}),
+	new Component("PSU", {
+		image: "https://m.media-amazon.com/images/I/41qguKNO1nL._AC_US256_.jpg",
+		brand: "Corsair",
+		model: "HX1000i",
+		description: "Fully modular • 80+ Platinum",
+		prices: [
+			new Price(219.00, 9.68),
+		],
+		links: [
+			new Link(Website.AMAZON_DE, "https://www.amazon.de/Corsair-Alimentation-Enti%C3%A8rement-Silencieuse-Hydrodynamique/dp/B0B4HJYZXC"),
+		],
+	}),
 	new Component("Case", {
 		image: "https://m.media-amazon.com/images/I/41y8mm4LplL._AC_US256_.jpg",
 		brand: "Corsair",
