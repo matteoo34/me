@@ -1,5 +1,5 @@
-import {Link} from "../Link.js";
-import {Price} from "../Price.js";
+import {Link} from "./Link.js";
+import {Price} from "./Price.js";
 
 export class Component {
 	/**
