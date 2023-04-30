@@ -56,15 +56,15 @@ const setup = new Setup([
 		],
 	}),
 	new Component("GPU", {
-		image: "https://cdna.pcpartpicker.com/static/forever/images/product/877b6072fa719e4d7a6a03f14078d41f.256p.jpg",
-		brand: "PowerColor",
+		image: "https://m.media-amazon.com/images/I/51wtY1kIi0L._AC_US256_.jpg",
+		brand: "Gigabyte",
 		model: "Radeon RX 7900 XTX",
 		description: "24Gb GDDR6 • 4K",
 		prices: [
-			new Price(1199.99, 0),
+			new Price(1129.99, 0),
 		],
 		links: [
-			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wgfx_pcie_puis_ref_est_in20015859.html"),
+			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wgfx_pcie_puis_ref_est_in20016630.html"),
 		],
 	}),
 	new Component("SSD (OS)", {
@@ -102,33 +102,34 @@ const setup = new Setup([
 		],
 		links: [
 			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/Seagate-St4000dmz04-Barracuda-Disque-Interne-Argent/dp/B07D9C7SQH"),
 			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Seagate-St4000dmz04-Barracuda-Disque-Interne-Argent/dp/B07D9C7SQH"),
+			new Link(Website.AMAZON_DE, "https://www.amazon.de/Seagate-St4000dmz04-Barracuda-Disque-Interne-Argent/dp/B07D9C7SQH"),
 		],
 	}),
 	new Component("PSU", {
-		image: "https://m.media-amazon.com/images/I/41qguKNO1nL._AC_US256_.jpg",
-		brand: "Corsair",
-		model: "HX1000i",
+		image: "https://m.media-amazon.com/images/I/41UDBwjuXmL._AC_US256_.jpg",
+		brand: "be quiet!",
+		model: "Straight Power 11 1000W",
 		description: "Fully modular • 80+ Platinum",
 		prices: [
-			new Price(219.00, 9.68),
+			new Price(193.02, 9.90),
+			new Price(209.99, 0),
 		],
 		links: [
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/Corsair-Alimentation-Enti%C3%A8rement-Silencieuse-Hydrodynamique/dp/B0B4HJYZXC"),
+			new Link(Website.AMAZON_DE, "https://www.amazon.de/quiet-Straight-Power-Platinum-dalimentation/dp/B083SVLLCQ"),
+			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ali_puis_ref_est_in20000189.html"),
 		],
 	}),
 	new Component("Case", {
-		image: "https://m.media-amazon.com/images/I/41y8mm4LplL._AC_US256_.jpg",
+		image: "https://m.media-amazon.com/images/I/31V0PR8VsWL._AC_US256_.jpg",
 		brand: "Corsair",
-		model: "Obsidian 500D RGB SE Black",
-		description: "50cm x 23.7cm x 50.7cm • 3 LL120 RGB fans included",
+		model: "Obsidian 500D Premium Black",
+		description: "50.2cm x 23.3cm x 50.8cm • 2 fans included",
 		prices: [
-			new Price(239.99, 0),
-			new Price(216.41, 19.61),
+			new Price(181.91, 0),
 		],
 		links: [
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/Corsair-Tempered-Aluminium-Commander-Included/dp/B07C46L1D8"),
+			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Corsair-Obsidian-Bo%C3%AEtier-Moyen-Tour-Aluminium/dp/B074T6691B"),
 		],
 	}),
 	new Component("Keyboard", {
