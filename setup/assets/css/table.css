@@ -43,14 +43,13 @@ table .pricing {
 	background-color: var(--primary);
 }
 
-table .pricing .min, table .pricing .max {
-	font-size: .75rem;
-}
-
-table .pricing .current {
-	margin-bottom: .25rem;
+table .pricing .amount {
 	font-size: 1.25rem;
 	font-weight: 900;
+}
+
+table .pricing .delivery {
+	font-size: .75rem;
 }
 
 table .links {

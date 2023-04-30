@@ -36,7 +36,7 @@ export class Component {
 	 * @private
 	 * @type {Price[]}
 	 */
-	#priceHistory;
+	#prices;
 
 	/**
 	 * @private
@@ -51,16 +51,16 @@ export class Component {
 	 * @param {String} options.brand
 	 * @param {String} options.model
 	 * @param {String} options.description
-	 * @param {Price[]} options.priceHistory
+	 * @param {Price[]} options.prices
 	 * @param {Link[]} options.links
 	 */
-	constructor(type, {image, brand, model, description, priceHistory, links}) {
+	constructor(type, {image, brand, model, description, prices, links}) {
 		this.#type = type;
 		this.#image = image;
 		this.#brand = brand;
 		this.#model = model;
 		this.#description = description;
-		this.#priceHistory = priceHistory;
+		this.#prices = prices;
 		this.#links = links;
 	}
 
@@ -115,13 +115,13 @@ export class Component {
 	}
 
 	/** @returns {Price[]} */
-	getPriceHistory() {
-		return this.#priceHistory;
+	getPrices() {
+		return this.#prices;
 	}
 
-	/** @param {Price[]} priceHistory */
-	setPriceHistory(priceHistory) {
-		this.#priceHistory = priceHistory;
+	/** @param {Price[]} prices */
+	setPrices(prices) {
+		this.#prices = prices;
 	}
 
 	/** @returns {Link[]} */
@@ -134,18 +134,8 @@ export class Component {
 		this.#links = links;
 	}
 
-	/** @returns {?Price} */
-	getCurrentPrice() {
-		return this.#priceHistory.at(-1) ?? null;
-	}
-
 	/** @returns {Price} */
 	getMinimumPrice() {
-		return this.#priceHistory.reduce((a, b) => a.getTotalAmount() < b.getTotalAmount() ? a : b);
-	}
-
-	/** @returns {Price} */
-	getMaximumPrice() {
-		return this.#priceHistory.reduce((a, b) => a.getTotalAmount() > b.getTotalAmount() ? a : b);
+		return this.#prices.reduce((a, b) => a.getTotalAmount() < b.getTotalAmount() ? a : b);
 	}
 }

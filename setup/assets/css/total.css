@@ -1,0 +1,15 @@
+#total {
+	margin-top: 1rem;
+	text-align: right;
+}
+
+#total .amount {
+	margin: initial;
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+
+#total .delivery {
+	margin: initial;
+	margin-bottom: .5rem;
+}

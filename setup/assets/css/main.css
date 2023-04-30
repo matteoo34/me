@@ -1,5 +1,6 @@
 @import url(fonts.css);
 @import url(table.css);
+@import url(total.css);
 
 :root {
 	--primary: #f9f5e9;
@@ -13,10 +14,4 @@ body {
 	justify-content: center;
 	margin: 1rem;
 	font-family: "Radio Grotesk", sans-serif;
-}
-
-.info {
-	opacity: .75;
-	text-align: right;
-	font-size: .75rem;
 }

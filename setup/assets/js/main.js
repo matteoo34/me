@@ -10,8 +10,9 @@ import {Price} from "./Price.js";
 import {Setup} from "./Setup.js";
 import {Website} from "./Website.js";
 
-Website.AMAZON_DE = new Website("amazon.de", "assets/images/amazon_de.png", "#231f20");
 Website.AMAZON_FR = new Website("amazon.fr", "assets/images/amazon_fr.png", "#231f20");
+Website.AMAZON_DE = new Website("amazon.de", "assets/images/amazon_de.png", "#231f20");
+Website.AMAZON_ES = new Website("amazon.es", "assets/images/amazon_es.png", "#231f20");
 Website.TOPACHAT = new Website("topachat.com", "assets/images/topachat.png", "#0281bd");
 
 const setup = new Setup([
@@ -20,15 +21,15 @@ const setup = new Setup([
 		brand: "Intel",
 		model: "Core i7-13700K 3.4GHz",
 		description: "LGA 1700 • 16 cores",
-		priceHistory: [
-			new Price(444.32, 4.61),
+		prices: [
 			new Price(468.46, 0),
-			new Price(469.46, 0),
+			new Price(444.32, 4.61),
+			new Price(425.45, 4.61),
 		],
 		links: [
 			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Intel-BX8071513700K-CPU-Core-i7-13700K/dp/B0BG6843GX"),
 			new Link(Website.AMAZON_DE, "https://www.amazon.de/Intel-BX8071513700K-CPU-Core-i7-13700K/dp/B0BG6843GX"),
-			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wpr_puis_ref_est_in20014981.html"),
+			new Link(Website.AMAZON_ES, "https://www.amazon.es/Intel-BX8071513700K-CPU-Core-i7-13700K/dp/B0BG6843GX"),
 		],
 	}),
 	new Motherboard({
@@ -36,8 +37,8 @@ const setup = new Setup([
 		brand: "Asus",
 		model: "ROG Strix Z790-F Gaming",
 		description: "E-ATX • ATX • Wi-Fi",
-		priceHistory: [
-			new Price(457.16, 8),
+		prices: [
+			new Price(457.16, 8.00),
 			new Price(421.60, 7.77),
 		],
 		links: [
@@ -50,7 +51,7 @@ const setup = new Setup([
 		brand: "Corsair",
 		model: "Vengeance RGB PRO 32Gb (2x16Gb)",
 		description: "DDR4 3600MHz • CL18",
-		priceHistory: [
+		prices: [
 			new Price(99.99, 0),
 			new Price(83.90, 4.79),
 		],
@@ -61,17 +62,15 @@ const setup = new Setup([
 		],
 	}),
 	new GPU({
-		image: "https://m.media-amazon.com/images/I/41CPAONBByL._AC_US256_.jpg",
-		brand: "Sapphire",
+		image: "https://cdna.pcpartpicker.com/static/forever/images/product/877b6072fa719e4d7a6a03f14078d41f.256p.jpg",
+		brand: "PowerColor",
 		model: "Radeon RX 7900 XTX",
 		description: "24Gb GDDR6 • 4K",
-		priceHistory: [
-			new Price(1349.99, 0),
+		prices: [
+			new Price(1199.99, 0),
 		],
 		links: [
-			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Sapphire-21322-01-20G-Radeon-Gaming-Graphics/dp/B0BMM9F62S"),
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/Sapphire-21322-01-20G-Radeon-Gaming-Graphics/dp/B0BMM9F62S"),
-			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wgfx_pcie_puis_ref_est_in20015855.html"),
+			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wgfx_pcie_puis_ref_est_in20015859.html"),
 		],
 	}),
 	new SSD({
@@ -79,9 +78,9 @@ const setup = new Setup([
 		brand: "Corsair",
 		model: "MP600 PRO LPX 500Gb NVMe M.2",
 		description: "PCIe x4 • Read 7100Mb • Write 6800Mb",
-		priceHistory: [
+		prices: [
+			new Price(69.86, 0),
 			new Price(68.89, 4.60),
-			new Price(69.85, 0),
 		],
 		links: [
 			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Corsair-MP600-500GB-NVMe-PCIe/dp/B09Q2NL53M"),
@@ -94,7 +93,7 @@ const setup = new Setup([
 		brand: "Seagate",
 		model: "Barracuda 4Tb",
 		description: "SATA III • 3.5\" • 5400 RPM",
-		priceHistory: [
+		prices: [
 			new Price(90.39, 0),
 			new Price(89.99, 0),
 		],
@@ -107,9 +106,9 @@ const setup = new Setup([
 	new Keyboard({
 		image: "https://m.media-amazon.com/images/I/4117+8ARx3L._AC_US256_.jpg",
 		brand: "Logitech",
-		model: "G815 LightSync RGB (wired)",
-		description: "AZERTY • GL Tactile",
-		priceHistory: [
+		model: "G815 LightSync RGB",
+		description: "AZERTY • GL Tactile switches",
+		prices: [
 			new Price(184.99, 0),
 		],
 		links: [
@@ -120,4 +119,4 @@ const setup = new Setup([
 	}),
 ]);
 
-setup.table(table);
+setup.populate(table, total);

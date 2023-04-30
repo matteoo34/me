@@ -19,7 +19,7 @@
 					<tr>
 						<th></th>
 						<th colspan="2">Model</th>
-						<th>Pricing*</th>
+						<th>Pricing</th>
 						<th>Links</th>
 					</tr>
 				</thead>
@@ -27,7 +27,10 @@
 				<tbody></tbody>
 			</table>
 
-			<p class="info">* The delivery amount is included in the displayed prices.</p>
+			<div id="total">
+				<p class="amount">Total: 0.00€</p>
+				<p class="delivery">including 0.00€ delivery</p>
+			</div>
 		</main>
 
 		<template id="template">
@@ -41,9 +44,8 @@
 					<div class="description"></div>
 				</td>
 				<td class="pricing">
-					<div class="current"></div>
-					<div class="min"></div>
-					<div class="max"></div>
+					<div class="amount"></div>
+					<div class="delivery"></div>
 				</td>
 				<td class="links">
 					<div></div>

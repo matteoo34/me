@@ -1,4 +1,5 @@
 import {Component} from "./components/Component.js";
+import {Price} from "./Price.js";
 
 export class Setup {
 	/**
@@ -22,9 +23,13 @@ export class Setup {
 		this.#components = components;
 	}
 
-	/** @param {HTMLTableElement} table */
-	table(table) {
+	/**
+	 * @param {HTMLTableElement} table
+	 * @param {HTMLDivElement} total
+	 */
+	populate(table, total) {
 		const body = table.lastElementChild;
+		const totalPrice = new Price(0, 0);
 
 		for (const component of this.#components) {
 			const tr = template.content.querySelector("tr").cloneNode(true);
@@ -34,22 +39,18 @@ export class Setup {
 			tr.querySelector("td.model .name").textContent = `${component.getBrand()} ${component.getModel()}`;
 			tr.querySelector("td.model .description").textContent = component.getDescription();
 
-			const currentPrice = component.getCurrentPrice();
-
-			if (currentPrice !== null) {
-				const currentPriceDelivery = currentPrice.getDeliveryAmount();
-
-				tr.querySelector("td.pricing .current").textContent = `${currentPrice.getAmount().toFixed(2)}€${currentPriceDelivery !== 0 ? ` (${currentPriceDelivery.toFixed(2)}€ delivery)` : ''}`;
-
+			if (component.getPrices().length !== 0) {
 				const minPrice = component.getMinimumPrice();
 				const minPriceDelivery = minPrice.getDeliveryAmount();
 
-				tr.querySelector("td.pricing .min").textContent = `Min: ${minPrice.getAmount().toFixed(2)}€${minPriceDelivery !== 0 ? ` (${minPriceDelivery.toFixed(2)}€ delivery)` : ''}`;
+				tr.querySelector("td.pricing .amount").textContent = `${minPrice.getTotalAmount().toFixed(2)}€`;
 
-				const maxPrice = component.getMaximumPrice();
-				const maxPriceDelivery = maxPrice.getDeliveryAmount();
+				if (minPriceDelivery !== 0) {
+					tr.querySelector("td.pricing .delivery").textContent = `including ${minPriceDelivery.toFixed(2)}€ delivery`;
+				}
 
-				tr.querySelector("td.pricing .max").textContent = `Max: ${maxPrice.getAmount().toFixed(2)}€${maxPriceDelivery !== 0 ? ` (${maxPriceDelivery.toFixed(2)}€ delivery)` : ''}`;
+				totalPrice.setAmount(totalPrice.getAmount() + minPrice.getAmount());
+				totalPrice.setDeliveryAmount(totalPrice.getDeliveryAmount() + minPrice.getDeliveryAmount());
 			}
 
 			const links = tr.querySelector("td.links div");
@@ -70,5 +71,8 @@ export class Setup {
 
 			body.appendChild(tr);
 		}
+
+		total.querySelector(".amount").textContent = `Total: ${totalPrice.getTotalAmount().toFixed(2)}€`;
+		total.querySelector(".delivery").textContent = `including ${totalPrice.getDeliveryAmount().toFixed(2)}€ delivery`;
 	}
 }
