@@ -40,6 +40,12 @@ export class Component {
 
 	/**
 	 * @private
+	 * @type {?Price}
+	 */
+	#bestPrice;
+
+	/**
+	 * @private
 	 * @type {Link[]}
 	 */
 	#links;
@@ -52,14 +58,16 @@ export class Component {
 	 * @param {String} options.model
 	 * @param {String} options.description
 	 * @param {Price[]} options.prices
+	 * @param {?Price} [options.bestPrice]
 	 * @param {Link[]} options.links
 	 */
-	constructor(type, {image, brand, model, description, prices, links}) {
+	constructor(type, {image, brand, model, description, prices, bestPrice = null, links}) {
 		this.#type = type;
 		this.#image = image;
 		this.#brand = brand;
 		this.#model = model;
 		this.#description = description;
+		this.#bestPrice = bestPrice;
 		this.#prices = prices;
 		this.#links = links;
 	}
@@ -122,6 +130,16 @@ export class Component {
 	/** @param {Price[]} prices */
 	setPrices(prices) {
 		this.#prices = prices;
+	}
+
+	/** @returns {?Price} */
+	getBestPrice() {
+		return this.#bestPrice;
+	}
+
+	/** @param {?Price} bestPrice */
+	setBestPrice(bestPrice) {
+		this.#bestPrice = bestPrice;
 	}
 
 	/** @returns {Link[]} */

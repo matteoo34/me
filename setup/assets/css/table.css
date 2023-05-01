@@ -48,8 +48,12 @@ table .pricing .amount {
 	font-weight: 900;
 }
 
-table .pricing .delivery {
+table .pricing .delivery, table .pricing .best {
 	font-size: .75rem;
+}
+
+table .pricing .best {
+	color: var(--secondary);
 }
 
 table .links {

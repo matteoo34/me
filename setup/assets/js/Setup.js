@@ -53,20 +53,31 @@ export class Setup {
 				totalPrice.setDeliveryAmount(totalPrice.getDeliveryAmount() + minPrice.getDeliveryAmount());
 			}
 
-			const links = tr.querySelector("td.links div");
+			{
+				/** @type {?Price} */
+				const bestPrice = component.getBestPrice();
 
-			for (const link of component.getLinks()) {
-				const website = link.getWebsite();
+				if (bestPrice !== null) {
+					tr.querySelector("td.pricing .best").textContent = `Best: ${bestPrice.getTotalAmount().toFixed(2)}€`;
+				}
+			}
 
-				const a = template.content.querySelector(".link").cloneNode(true);
-				const img = a.querySelector("img");
+			{
+				const links = tr.querySelector("td.links div");
 
-				a.href = link.getURL();
-				a.style.backgroundColor = website.getColor();
-				img.src = website.getLogo();
-				img.alt = website.getName();
+				for (const link of component.getLinks()) {
+					const website = link.getWebsite();
 
-				links.appendChild(a);
+					const a = template.content.querySelector(".link").cloneNode(true);
+					const img = a.querySelector("img");
+
+					a.href = link.getURL();
+					a.style.backgroundColor = website.getColor();
+					img.src = website.getLogo();
+					img.alt = website.getName();
+
+					links.appendChild(a);
+				}
 			}
 
 			body.appendChild(tr);

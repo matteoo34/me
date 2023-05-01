@@ -4,11 +4,13 @@ import {Price} from "./Price.js";
 import {Setup} from "./Setup.js";
 import {Website} from "./Website.js";
 
-Website.AMAZON_FR = new Website("amazon.fr", "assets/images/amazon_fr.png", "#231f20");
 Website.AMAZON_DE = new Website("amazon.de", "assets/images/amazon_de.png", "#231f20");
 Website.AMAZON_ES = new Website("amazon.es", "assets/images/amazon_es.png", "#231f20");
+Website.AMAZON_FR = new Website("amazon.fr", "assets/images/amazon_fr.png", "#231f20");
+Website.AMD = new Website("amd.com", "assets/images/amd.png", "#1a1a1b");
 Website.TOPACHAT = new Website("topachat.com", "assets/images/topachat.png", "#0281bd");
 
+/** @type {Setup} */
 const setup = new Setup([
 	new Component("CPU", {
 		image: "https://m.media-amazon.com/images/I/31Byi3U8YDL._AC_US256_.jpg",
@@ -21,23 +23,34 @@ const setup = new Setup([
 			new Price(425.45, 4.61),
 		],
 		links: [
-			new Link(Website.AMAZON_ES, "https://www.amazon.es/Intel-BX8071513700K-CPU-Core-i7-13700K/dp/B0BG6843GX"),
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/Intel-BX8071513700K-CPU-Core-i7-13700K/dp/B0BG6843GX"),
-			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Intel-BX8071513700K-CPU-Core-i7-13700K/dp/B0BG6843GX"),
+			new Link(Website.AMAZON_ES, "https://www.amazon.es/dp/B0BG6843GX"),
+			new Link(Website.AMAZON_DE, "https://www.amazon.de/dp/B0BG6843GX"),
+			new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B0BG6843GX"),
 		],
 	}),
 	new Component("Motherboard", {
-		image: "https://m.media-amazon.com/images/I/41Er4p78RML._AC_US256_.jpg",
+		image: "https://m.media-amazon.com/images/I/51mQQ+7bWuL._AC_US256_.jpg",
 		brand: "Asus",
-		model: "ROG Strix Z790-F Gaming",
-		description: "E-ATX • ATX • Wi-Fi",
+		model: "ROG Strix Z690-F Gaming",
+		description: "ATX • LGA 1700 • Wi-Fi",
 		prices: [
-			new Price(457.16, 8.00),
-			new Price(421.60, 7.77),
+			// new Price(457.16, 8.00),
+			// new Price(421.60, 7.77),
+			new Price(350.99, 9.90),
 		],
 		links: [
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/ASUS-STRIX-Z790-F-GAMING-WIFI/dp/B0BH94RXPC"),
-			new Link(Website.AMAZON_FR, "https://www.amazon.fr/ASUS-STRIX-Z790-F-GAMING-WIFI/dp/B0BH94RXPC"),
+			new Link(Website.AMAZON_DE, "https://www.amazon.de/dp/B09JSZZXD4"),
+		],
+	}),
+	new Component("Watercooling", {
+		image: "https://m.media-amazon.com/images/I/31SjTwL4oGL._AC_US256_.jpg",
+		brand: "be quiet!",
+		model: "Pure Loop 360mm",
+		prices: [
+			new Price(119.99, 9.90),
+		],
+		links: [
+			new Link(Website.AMAZON_DE, "https://www.amazon.de/dp/B08K3P1KRY"),
 		],
 	}),
 	new Component("RAM", {
@@ -46,49 +59,48 @@ const setup = new Setup([
 		model: "Vengeance RGB PRO 32Gb (2x16Gb)",
 		description: "DDR4 3600MHz • CL18 (18-22-22-42)",
 		prices: [
-			new Price(99.99, 0),
-			new Price(83.90, 4.79),
+			new Price(88.99, 0),
 		],
 		links: [
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/Corsair-Vengeance-3600MHz-Performance-Optimis%C3%A9/dp/B082DGZJ9C"),
-			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wme_ddr4_puis_ref_est_in20000456.html"),
-			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Corsair-Vengeance-3600MHz-Performance-Optimis%C3%A9/dp/B082DGZJ9C"),
+			new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B082DJ19CK"),
 		],
 	}),
 	new Component("GPU", {
-		image: "https://m.media-amazon.com/images/I/51wtY1kIi0L._AC_US256_.jpg",
-		brand: "Gigabyte",
+		image: "https://m.media-amazon.com/images/I/31q7quYSDvL._AC_US256_.jpg",
+		brand: "AMD",
 		model: "Radeon RX 7900 XTX",
 		description: "24Gb GDDR6 • 4K",
 		prices: [
-			new Price(1129.99, 0),
+			new Price(1088.00, 0),
 		],
+		bestPrice: new Price(1077.00, 0),
 		links: [
-			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wgfx_pcie_puis_ref_est_in20016630.html"),
+			new Link(Website.AMD, "https://shop-eu-fr.amd.com/amd-radeon-rx-7900-xtx-graphics"),
 		],
 	}),
-	new Component("SSD (OS)", {
-		image: "https://m.media-amazon.com/images/I/31hO1ipOhrL._AC_US256_.jpg",
+	new Component("SSD 1 (OS)", {
+		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		brand: "Corsair",
 		model: "MP600 PRO XT 1Tb M.2 NVMe Gen4",
 		description: "Gen4 • PCIe x4 • Read 7100Mb • Write 5800Mb",
 		prices: [
-			new Price(101.89, 4.82),
+			new Price(93.99, 0),
 		],
 		links: [
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/Corsair-Sequential-Speeds-7100MB-Density/dp/B09F5Z6BJ6"),
+			new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B09F5Z6BJ6"),
 		],
 	}),
-	new Component("SSD", {
+	new Component("SSD 2", {
 		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		brand: "Corsair",
 		model: "MP600 PRO XT 2Tb M.2 NVMe Gen4",
 		description: "Gen4 • PCIe x4 • Read 7100Mb • Write 6800Mb",
 		prices: [
-			new Price(169.99, 4.66),
+			new Price(172.85, 4.66),
 		],
+		bestPrice: new Price(169.99, 4.66),
 		links: [
-			new Link(Website.AMAZON_ES, "https://www.amazon.es/Corsair-Velocidades-Secuencial-Escritura-Disipador/dp/B09F5X8ZMY"),
+			new Link(Website.AMAZON_ES, "https://www.amazon.es/dp/B09F5X8ZMY"),
 		],
 	}),
 	new Component("HDD", {
@@ -102,34 +114,38 @@ const setup = new Setup([
 		],
 		links: [
 			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
-			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Seagate-St4000dmz04-Barracuda-Disque-Interne-Argent/dp/B07D9C7SQH"),
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/Seagate-St4000dmz04-Barracuda-Disque-Interne-Argent/dp/B07D9C7SQH"),
+			new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B07D9C7SQH"),
+			new Link(Website.AMAZON_DE, "https://www.amazon.de/dp/B07D9C7SQH"),
 		],
 	}),
 	new Component("PSU", {
 		image: "https://m.media-amazon.com/images/I/41UDBwjuXmL._AC_US256_.jpg",
 		brand: "be quiet!",
 		model: "Straight Power 11 1000W",
-		description: "Fully modular • 80+ Platinum",
+		description: "Modular • 80+ Platinum",
 		prices: [
 			new Price(193.02, 9.90),
 			new Price(209.99, 0),
 		],
 		links: [
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/quiet-Straight-Power-Platinum-dalimentation/dp/B083SVLLCQ"),
+			new Link(Website.AMAZON_DE, "https://www.amazon.de/dp/B083SVLLCQ"),
 			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ali_puis_ref_est_in20000189.html"),
+			new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B083SVLLCQ"),
 		],
 	}),
 	new Component("Case", {
-		image: "https://m.media-amazon.com/images/I/31V0PR8VsWL._AC_US256_.jpg",
+		image: "https://m.media-amazon.com/images/I/41y8mm4LplL._AC_US256_.jpg",
 		brand: "Corsair",
-		model: "Obsidian 500D Premium Black",
-		description: "50.2cm x 23.3cm x 50.8cm • 2 fans included",
+		model: "Obsidian 500D RGB SE",
+		description: "50.01 x 23.7 x 50.7cm • 3 LL120 RGB fans included",
 		prices: [
-			new Price(181.91, 0),
+			new Price(216.41, 19.61),
+			new Price(239.99, 0),
 		],
 		links: [
-			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Corsair-Obsidian-Bo%C3%AEtier-Moyen-Tour-Aluminium/dp/B074T6691B"),
+			new Link(Website.AMAZON_DE, "https://www.amazon.de/dp/B07C46L1D8"),
+			new Link(Website.AMAZON_ES, "https://www.amazon.es/dp/B07C46L1D8"),
+			new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B07C46L1D8"),
 		],
 	}),
 	new Component("Keyboard", {
@@ -141,7 +157,7 @@ const setup = new Setup([
 			new Price(184.99, 0),
 		],
 		links: [
-			new Link(Website.AMAZON_FR, "https://www.amazon.fr/Logitech-Lightspeed-M%C3%A9canique-Progammables-contr%C3%B4le/dp/B07VV8R58C"),
+			new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B07VV8R58C"),
 			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
 		],
 	}),
