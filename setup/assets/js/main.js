@@ -119,7 +119,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de"),
 			}),
 		],
-		bestPrice: new Price(83.23, 5.23),
+		bestPrice: new Price(73.23, 5.23),
 		target: 80,
 		// prices: [
 		// 	new Price(90.39, 0),

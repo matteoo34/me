@@ -3,13 +3,25 @@
 	text-align: right;
 }
 
-#total .amount {
+#total p {
 	margin: initial;
+}
+
+#total .current-amount {
 	font-size: 1.5rem;
 	font-weight: 900;
 }
 
-#total .delivery {
-	margin: initial;
+#total .current-delivery {
 	margin-bottom: .5rem;
+}
+
+#total .best-amount {
+	color: var(--secondary);
+	font-size: 1.25rem;
+}
+
+#total .best-delivery {
+	color: var(--secondary);
+	font-size: .75rem;
 }
