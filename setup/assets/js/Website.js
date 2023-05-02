@@ -12,20 +12,24 @@ export class Website {
 	#logo;
 
 	/**
-	 * @private;
-	 * @type {String}
-	 */
-	#color;
-
-	/**
 	 * @param {String} name
 	 * @param {String} logo
-	 * @param {String} color
 	 */
-	constructor(name, logo, color) {
+	constructor(name, logo) {
 		this.#name = name;
 		this.#logo = logo;
-		this.#color = color;
+	}
+
+	/**
+	 * @param {String} url
+	 * @returns {?Website}
+	 */
+	static fromURL(url) {
+		for (const website of Website.WEBSITES) {
+			if (url.includes(website.getName())) return website;
+		}
+
+		return null;
 	}
 
 	/** @returns {String} */
@@ -47,14 +51,11 @@ export class Website {
 	setLogo(logo) {
 		this.#logo = logo;
 	}
-
-	/** @returns {String} */
-	getColor() {
-		return this.#color;
-	}
-
-	/** @param {String} color */
-	setColor(color) {
-		this.#color = color;
-	}
 }
+
+Website.AMAZON_DE = new Website("amazon.de", "assets/images/amazon_de.png");
+Website.AMAZON_ES = new Website("amazon.es", "assets/images/amazon_es.png");
+Website.AMAZON_FR = new Website("amazon.fr", "assets/images/amazon_fr.png");
+Website.AMD = new Website("amd.com", "assets/images/amd.png");
+Website.TOPACHAT = new Website("topachat.com", "assets/images/topachat.png");
+Website.WEBSITES = [Website.AMAZON_DE, Website.AMAZON_ES, Website.AMAZON_FR, Website.AMD, Website.TOPACHAT];

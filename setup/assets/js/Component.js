@@ -1,22 +1,18 @@
-import {Link} from "./Link.js";
+import {Brand} from "./Brand.js";
 import {Price} from "./Price.js";
+import {Sell} from "./Sell.js";
+import {Type} from "./Type.js";
 
 export class Component {
 	/**
 	 * @private
-	 * @type {String}
+	 * @type {Type}
 	 */
 	#type;
 
 	/**
 	 * @private
-	 * @type {String}
-	 */
-	#image;
-
-	/**
-	 * @private
-	 * @type {String}
+	 * @type {Brand}
 	 */
 	#brand;
 
@@ -28,15 +24,21 @@ export class Component {
 
 	/**
 	 * @private
-	 * @type {String}
+	 * @type {?String}
 	 */
 	#description;
 
 	/**
 	 * @private
-	 * @type {Price[]}
+	 * @type {String}
 	 */
-	#prices;
+	#image;
+
+	/**
+	 * @private
+	 * @type {Sell[]}
+	 */
+	#sells;
 
 	/**
 	 * @private
@@ -46,58 +48,48 @@ export class Component {
 
 	/**
 	 * @private
-	 * @type {Link[]}
+	 * @type {?Number}
 	 */
-	#links;
+	#target;
 
 	/**
-	 * @param {String} type
 	 * @param {Object} options
-	 * @param {String} options.image
-	 * @param {String} options.brand
+	 * @param {Type} options.type
+	 * @param {Brand} options.brand
 	 * @param {String} options.model
-	 * @param {String} options.description
-	 * @param {Price[]} options.prices
+	 * @param {?String} [options.description]
+	 * @param {String} options.image
+	 * @param {Sell[]} options.sells
 	 * @param {?Price} [options.bestPrice]
-	 * @param {Link[]} options.links
+	 * @param {?Number} [options.targetPrice]
 	 */
-	constructor(type, {image, brand, model, description, prices, bestPrice = null, links}) {
+	constructor({type, brand, model, description = null, image, sells, bestPrice = null, target = null}) {
 		this.#type = type;
-		this.#image = image;
 		this.#brand = brand;
 		this.#model = model;
 		this.#description = description;
+		this.#image = image;
+		this.#sells = sells;
 		this.#bestPrice = bestPrice;
-		this.#prices = prices;
-		this.#links = links;
+		this.#target = target;
 	}
 
-	/** @returns {String} */
+	/** @returns {Type} */
 	getType() {
 		return this.#type;
 	}
 
-	/** @param {String} type */
+	/** @param {Type} type */
 	setType(type) {
 		this.#type = type;
 	}
 
-	/** @returns {String} */
-	getImage() {
-		return this.#image;
-	}
-
-	/** @param {String} image */
-	setImage(image) {
-		this.#image = image;
-	}
-
-	/** @returns {String} */
+	/** @returns {Brand} */
 	getBrand() {
 		return this.#brand;
 	}
 
-	/** @param {String} brand */
+	/** @param {Brand} brand */
 	setBrand(brand) {
 		this.#brand = brand;
 	}
@@ -112,24 +104,34 @@ export class Component {
 		this.#model = model;
 	}
 
-	/** @returns {String} */
+	/** @returns {?String} */
 	getDescription() {
 		return this.#description;
 	}
 
-	/** @param {String} description */
+	/** @param {?String} description */
 	setDescription(description) {
 		this.#description = description;
 	}
 
-	/** @returns {Price[]} */
-	getPrices() {
-		return this.#prices;
+	/** @returns {String} */
+	getImage() {
+		return this.#image;
 	}
 
-	/** @param {Price[]} prices */
-	setPrices(prices) {
-		this.#prices = prices;
+	/** @param {String} image */
+	setImage(image) {
+		this.#image = image;
+	}
+
+	/** @returns {Sell[]} */
+	getSells() {
+		return this.#sells;
+	}
+
+	/** @param {Sell[]} sells */
+	setSells(sells) {
+		this.#sells = sells;
 	}
 
 	/** @returns {?Price} */
@@ -142,18 +144,18 @@ export class Component {
 		this.#bestPrice = bestPrice;
 	}
 
-	/** @returns {Link[]} */
-	getLinks() {
-		return this.#links;
+	/** @returns {?Number} */
+	getTarget() {
+		return this.#target;
 	}
 
-	/** @param {Link[]} links */
-	setLinks(links) {
-		this.#links = links;
+	/** @param {?Number} target */
+	setTarget(target) {
+		this.#target = target;
 	}
 
-	/** @returns {Price} */
-	getMinimumPrice() {
-		return this.#prices.reduce((a, b) => a.getTotalAmount() < b.getTotalAmount() ? a : b);
+	/** @returns {?Sell} */
+	getBestSell() {
+		return this.#sells.reduce((a, b) => a.getPrice().getTotalAmount() < b.getPrice().getTotalAmount() ? a : b);
 	}
 }

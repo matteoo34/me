@@ -1,0 +1,19 @@
+table .best {
+	padding: .5rem;
+	background-color: var(--tertiary);
+	color: var(--white);
+}
+
+table .best .total {
+	font-size: 1.25rem;
+	font-weight: 200;
+}
+
+table .best .delivery {
+	font-size: .75rem;
+}
+
+table .best .target {
+	color: var(--secondary);
+	font-size: .75rem;
+}

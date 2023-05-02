@@ -3,33 +3,20 @@ import {Website} from "./Website.js";
 export class Link {
 	/**
 	 * @private
-	 * @type {Website}
-	 */
-	#website;
-
-	/**
-	 * @private
 	 * @type {String}
 	 */
 	#url;
 
 	/**
-	 * @param {Website} website
-	 * @param {String} url
+	 * @private
+	 * @type {?Website}
 	 */
-	constructor(website, url) {
-		this.#website = website;
+	#website;
+
+	/** @param {String} url */
+	constructor(url) {
 		this.#url = url;
-	}
-
-	/** @returns {Website} */
-	getWebsite() {
-		return this.#website;
-	}
-
-	/** @param {Website} website */
-	setWebsite(website) {
-		this.#website = website;
+		this.#website = Website.fromURL(url);
 	}
 
 	/** @returns {String} */
@@ -40,5 +27,15 @@ export class Link {
 	/** @param {String} url */
 	setURL(url) {
 		this.#url = url;
+	}
+
+	/** @returns {?Website} */
+	getWebsite() {
+		return this.#website;
+	}
+
+	/** @param {?Website} website */
+	setWebsite(website) {
+		this.#website = website;
 	}
 }

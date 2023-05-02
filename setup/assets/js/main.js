@@ -1,18 +1,14 @@
+import {Brand} from "./Brand.js";
 import {Component} from "./Component.js";
 import {Link} from "./Link.js";
 import {Price} from "./Price.js";
+import {Sell} from "./Sell.js";
 import {Setup} from "./Setup.js";
-import {Website} from "./Website.js";
-
-Website.AMAZON_DE = new Website("amazon.de", "assets/images/amazon_de.png", "#231f20");
-Website.AMAZON_ES = new Website("amazon.es", "assets/images/amazon_es.png", "#231f20");
-Website.AMAZON_FR = new Website("amazon.fr", "assets/images/amazon_fr.png", "#231f20");
-Website.AMD = new Website("amd.com", "assets/images/amd.png", "#1a1a1b");
-Website.TOPACHAT = new Website("topachat.com", "assets/images/topachat.png", "#0281bd");
+import {Type} from "./Type.js";
 
 /** @type {Setup} */
 const setup = new Setup([
-	new Component("CPU", {
+	/* new Component("CPU", {
 		image: "https://m.media-amazon.com/images/I/31Byi3U8YDL._AC_US256_.jpg",
 		brand: "Intel",
 		model: "Core i7-13700K 3.4GHz",
@@ -71,7 +67,7 @@ const setup = new Setup([
 		model: "Radeon RX 7900 XTX",
 		description: "24Gb GDDR6 • 4K",
 		prices: [
-			new Price(1088.00, 0),
+			new Price(1091.00, 0),
 		],
 		bestPrice: new Price(1077.00, 0),
 		links: [
@@ -102,23 +98,42 @@ const setup = new Setup([
 		links: [
 			new Link(Website.AMAZON_ES, "https://www.amazon.es/dp/B09F5X8ZMY"),
 		],
-	}),
-	new Component("HDD", {
-		image: "https://m.media-amazon.com/images/I/41Z-sFIFVOL._AC_US256_.jpg",
-		brand: "Seagate",
+	}), */
+	new Component({
+		type: Type.HDD,
+		brand: Brand.SEAGATE,
 		model: "Barracuda 4Tb",
-		description: "SATA III • 3.5\" • 5400 RPM",
-		prices: [
-			new Price(90.39, 0),
-			new Price(89.99, 0),
+		description: "3.5\" • SATA III • 5400 RPM",
+		image: "https://m.media-amazon.com/images/I/41Z-sFIFVOL._AC_US256_.jpg",
+		sells: [
+			new Sell({
+				price: new Price(89.99, 0),
+				link: new Link("https://www.topachat.com"),
+			}),
+			new Sell({
+				price: new Price(90.39, 0),
+				link: new Link("https://www.amazon.fr"),
+			}),
+			new Sell({
+				price: new Price(83.23, 5.23),
+				link: new Link("https://www.amazon.de"),
+			}),
 		],
-		links: [
-			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
-			new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B07D9C7SQH"),
-			new Link(Website.AMAZON_DE, "https://www.amazon.de/dp/B07D9C7SQH"),
-		],
+		bestPrice: new Price(83.23, 5.23),
+		target: 80,
+		// prices: [
+		// 	new Price(90.39, 0),
+		// 	new Price(89.99, 0),
+		// 	new Price(83.23, 5.23),
+		// ],
+		// links: [
+		// 	new Link(Website.AMAZON_DE, "https://www.amazon.de/dp/B0713R3Y6F"),
+		// 	new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
+		// 	new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B07D9C7SQH"),
+		// 	new Link(Website.AMAZON_ES, "https://www.amazon.es/dp/B0713R3Y6F"),
+		// ],
 	}),
-	new Component("PSU", {
+	/* new Component("PSU", {
 		image: "https://m.media-amazon.com/images/I/41UDBwjuXmL._AC_US256_.jpg",
 		brand: "be quiet!",
 		model: "Straight Power 11 1000W",
@@ -160,7 +175,7 @@ const setup = new Setup([
 			new Link(Website.AMAZON_FR, "https://www.amazon.fr/dp/B07VV8R58C"),
 			new Link(Website.TOPACHAT, "https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
 		],
-	}),
+	}), */
 ]);
 
-setup.populate(table, total);
+setup.populate(table, total, template);

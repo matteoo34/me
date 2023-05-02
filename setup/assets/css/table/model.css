@@ -1,0 +1,8 @@
+table .model {
+	padding: .5rem;
+	background-color: var(--primary);
+}
+
+table .model .description {
+	font-size: .75rem;
+}

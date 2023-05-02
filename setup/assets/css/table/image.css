@@ -1,0 +1,7 @@
+table .image {
+	padding: .5rem;
+}
+
+table .image img {
+	display: block;
+}

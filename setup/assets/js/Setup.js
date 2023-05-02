@@ -26,8 +26,9 @@ export class Setup {
 	/**
 	 * @param {HTMLTableElement} table
 	 * @param {HTMLDivElement} total
+	 * @param {HTMLTemplateElement} template
 	 */
-	populate(table, total) {
+	populate(table, total, template) {
 		const body = table.lastElementChild;
 		const totalPrice = new Price(0, 0);
 
@@ -39,45 +40,24 @@ export class Setup {
 			tr.querySelector("td.model .name").textContent = `${component.getBrand()} ${component.getModel()}`;
 			tr.querySelector("td.model .description").textContent = component.getDescription();
 
-			if (component.getPrices().length !== 0) {
-				const minPrice = component.getMinimumPrice();
-				const minPriceDelivery = minPrice.getDeliveryAmount();
+			for (const sell of component.getSells()) {
+				const price = sell.getPrice();
+				const link = sell.getLink();
+				const website = link.getWebsite();
+				const a = template.content.querySelector(".sell").cloneNode(true);
 
-				tr.querySelector("td.pricing .amount").textContent = `${minPrice.getTotalAmount().toFixed(2)}€`;
+				a.href = link.getURL();
+				a.querySelector("img").src = website.getLogo();
+				a.querySelector("img").alt = website.getName();
+				a.querySelector(".total").textContent = `${price.getTotalAmount().toFixed(2)}€`;
 
-				if (minPriceDelivery !== 0) {
-					tr.querySelector("td.pricing .delivery").textContent = `including ${minPriceDelivery.toFixed(2)}€ delivery`;
+				if (price.getDeliveryAmount() !== 0) {
+					a.querySelector(".delivery").textContent = `including ${price.getDeliveryAmount().toFixed(2)}€ delivery`;
 				}
 
-				totalPrice.setAmount(totalPrice.getAmount() + minPrice.getAmount());
-				totalPrice.setDeliveryAmount(totalPrice.getDeliveryAmount() + minPrice.getDeliveryAmount());
-			}
+				if (sell === component.getBestSell()) a.classList.add("best");
 
-			{
-				/** @type {?Price} */
-				const bestPrice = component.getBestPrice();
-
-				if (bestPrice !== null) {
-					tr.querySelector("td.pricing .best").textContent = `Best: ${bestPrice.getTotalAmount().toFixed(2)}€`;
-				}
-			}
-
-			{
-				const links = tr.querySelector("td.links div");
-
-				for (const link of component.getLinks()) {
-					const website = link.getWebsite();
-
-					const a = template.content.querySelector(".link").cloneNode(true);
-					const img = a.querySelector("img");
-
-					a.href = link.getURL();
-					a.style.backgroundColor = website.getColor();
-					img.src = website.getLogo();
-					img.alt = website.getName();
-
-					links.appendChild(a);
-				}
+				tr.querySelector(".sells div").appendChild(a);
 			}
 
 			body.appendChild(tr);
