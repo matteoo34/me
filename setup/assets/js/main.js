@@ -68,11 +68,11 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_reliq_puis_ref_est_in20005600.html"),
 			}),
 			new Sell({
-				price: new Price(136.30, 0),
+				price: new Price(136.38, 0),
 				link: new Link("https://www.amazon.fr/dp/B08K3P1KRY"),
 			}),
 			new Sell({
-				price: new Price(128.93, 9.90),
+				price: new Price(128.72, 9.90),
 				link: new Link("https://www.amazon.es/dp/B08K3P1KRY"),
 			}),
 		],
@@ -125,12 +125,12 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(93.99, 4.82),
-				link: new Link("https://www.amazon.de/dp/B09F5Z6BJ6"),
+				price: new Price(93.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
-				price: new Price(93.99, 4.99),
-				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
+				price: new Price(93.99, 4.82),
+				link: new Link("https://www.amazon.de/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
 				price: new Price(105.99, 4.82),
@@ -175,6 +175,10 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
 			}),
 			new Sell({
+				price: new Price(89.90, 0),
+				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
+			}),
+			new Sell({
 				price: new Price(89.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
 			}),
@@ -183,20 +187,16 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
 			}),
 			new Sell({
+				price: new Price(90.39, 0),
+				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
+			}),
+			new Sell({
 				price: new Price(79.18, 12.56),
 				link: new Link("https://www.amazon.es/dp/B07115ZSQ6"),
 			}),
 			new Sell({
 				price: new Price(80.97, 11.39),
 				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
-			}),
-			new Sell({
-				price: new Price(89.90, 4.99),
-				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
-			}),
-			new Sell({
-				price: new Price(90.39, 4.99),
-				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
 			}),
 		],
 		bestPrice: new Price(81.95, 5.23),
@@ -210,7 +210,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41UDBwjuXmL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(193.02, 9.90),
+				price: new Price(193.02, 6.00),
 				link: new Link("https://www.amazon.de/dp/B083SVLLCQ"),
 			}),
 			new Sell({
@@ -218,16 +218,16 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ali_puis_ref_est_in20000189.html"),
 			}),
 			new Sell({
+				price: new Price(209.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
+			}),
+			new Sell({
 				price: new Price(202.34, 9.90),
 				link: new Link("https://www.amazon.es/dp/B083SVLLCQ"),
 			}),
-			new Sell({
-				price: new Price(209.99, 4.99),
-				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
-			}),
 		],
-		bestPrice: new Price(193.02, 9.90),
-		target: 200,
+		bestPrice: new Price(193.02, 6.00),
+		target: 190,
 	}),
 	new Component({
 		type: Type.CASE,
