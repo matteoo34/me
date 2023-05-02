@@ -18,7 +18,7 @@ table .sells .sell {
 	transition-duration: .2s;
 }
 table .sells .sell.best {
-	background-color: var(--secondary);
+	background-color: var(--green);
 }
 table .sells .sell:last-of-type {
 	border-right: none;

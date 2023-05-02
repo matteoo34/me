@@ -1,6 +1,6 @@
 table .summary {
 	padding: .5rem;
-	background-color: var(--tertiary);
+	background-color: var(--secondary);
 	color: var(--white);
 }
 
@@ -8,13 +8,22 @@ table .summary .total {
 	font-size: 1.25rem;
 	font-weight: 200;
 }
+table .summary .total.reached {
+	color: var(--green);
+}
 
 table .summary .delivery {
 	font-size: .75rem;
 	font-weight: 200;
 }
+table .summary .delivery.reached {
+	color: var(--green);
+}
 
 table .summary .target {
-	color: var(--secondary);
+	color: var(--red);
 	font-size: .75rem;
+}
+table .summary .target.reached {
+	color: var(--green);
 }

@@ -31,6 +31,7 @@ export class Setup {
 	populate(table, total, template) {
 		const body = table.lastElementChild;
 		const totalPrice = new Price(0, 0), bestTotalPrice = new Price(0, 0);
+		let totalTarget = 0;
 
 		for (const component of this.#components) {
 			const tr = template.content.querySelector("tr").cloneNode(true);
@@ -49,6 +50,7 @@ export class Setup {
 				const a = template.content.querySelector(".sell").cloneNode(true);
 
 				a.href = link.getURL();
+				a.title = `Amount: ${price.getAmount().toFixed(2)}€\nDelivery: ${price.getDeliveryAmount().toFixed(2)}€`;
 				a.querySelector("img").src = website.getLogo();
 				a.querySelector("img").alt = website.getName();
 				a.querySelector(".total").textContent = `${price.getTotalAmount().toFixed(2)}€`;
@@ -70,23 +72,33 @@ export class Setup {
 				tr.querySelector(".summary .delivery").textContent = `including ${bestPrice.getDeliveryAmount().toFixed(2)}€ delivery`;
 			}
 
-			const target = component.getTarget();
-
-			if (target !== null) {
-				tr.querySelector(".summary .target").textContent = `Target: ${target.toFixed(2)}€`;
+			if (component.getBestSell().getPrice().getTotalAmount() <= bestPrice.getTotalAmount()) {
+				tr.querySelector(".summary .total").classList.add("reached");
+				tr.querySelector(".summary .delivery").classList.add("reached");
 			}
 
-			body.appendChild(tr);
+			const target = component.getTarget() ?? 0;
+
+			if (target !== 0) {
+				tr.querySelector(".summary .target").textContent = `Target: ${target.toFixed(2)}€`;
+
+				if (bestPrice.getTotalAmount() < target) tr.querySelector(".summary .target").classList.add("reached");
+			}
 
 			totalPrice.setAmount(totalPrice.getAmount() + bestSell.getPrice().getAmount());
 			totalPrice.setDeliveryAmount(totalPrice.getDeliveryAmount() + bestSell.getPrice().getDeliveryAmount());
 			bestTotalPrice.setAmount(bestTotalPrice.getAmount() + bestPrice.getAmount());
 			bestTotalPrice.setDeliveryAmount(bestTotalPrice.getDeliveryAmount() + bestPrice.getDeliveryAmount());
+
+			totalTarget += target;
+
+			body.appendChild(tr);
 		}
 
 		total.querySelector(".current-amount").textContent = `Current best total: ${totalPrice.getTotalAmount().toFixed(2)}€`;
 		total.querySelector(".current-delivery").textContent = `including ${totalPrice.getDeliveryAmount().toFixed(2)}€ delivery`;
 		total.querySelector(".best-amount").textContent = `Best total: ${bestTotalPrice.getTotalAmount().toFixed(2)}€`;
 		total.querySelector(".best-delivery").textContent = `including ${bestTotalPrice.getDeliveryAmount().toFixed(2)}€ delivery`;
+		total.querySelector(".target-total").textContent = `Target total: ${totalTarget.toFixed(2)}€`;
 	}
 }

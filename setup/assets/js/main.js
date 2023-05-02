@@ -28,7 +28,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(425.45, 4.61),
-		target: null,
+		target: 430,
 	}),
 	new Component({
 		type: Type.MOTHERBOARD,
@@ -42,7 +42,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B09JSZZXD4"),
 			}),
 			new Sell({
-				price: new Price(379.85, 8.00),
+				price: new Price(376.86, 9.90),
 				link: new Link("https://www.amazon.fr/dp/B09JSZZXD4"),
 			}),
 			new Sell({
@@ -51,7 +51,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(350.99, 9.90),
-		target: null,
+		target: 340,
 	}),
 	new Component({
 		type: Type.WATERCOOLING,
@@ -68,7 +68,7 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_reliq_puis_ref_est_in20005600.html"),
 			}),
 			new Sell({
-				price: new Price(136.36, 0),
+				price: new Price(136.30, 0),
 				link: new Link("https://www.amazon.fr/dp/B08K3P1KRY"),
 			}),
 			new Sell({
@@ -77,7 +77,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(119.99, 9.90),
-		target: null,
+		target: 110,
 	}),
 	new Component({
 		type: Type.RAM,
@@ -100,7 +100,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(88.99, 0),
-		target: null,
+		target: 80,
 	}),
 	new Component({
 		type: Type.GPU,
@@ -115,7 +115,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(1077.00, 0),
-		target: null,
+		target: 1100,
 	}),
 	new Component({
 		type: Type.SSD,
@@ -125,12 +125,12 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(93.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
-			}),
-			new Sell({
 				price: new Price(93.99, 4.82),
 				link: new Link("https://www.amazon.de/dp/B09F5Z6BJ6"),
+			}),
+			new Sell({
+				price: new Price(93.99, 4.99),
+				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
 				price: new Price(105.99, 4.82),
@@ -138,7 +138,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(93.99, 0),
-		target: null,
+		target: 90,
 	}),
 	new Component({
 		type: Type.SSD,
@@ -161,7 +161,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(172.85, 4.66),
-		target: null,
+		target: 170,
 	}),
 	new Component({
 		type: Type.HDD,
@@ -175,20 +175,12 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
 			}),
 			new Sell({
-				price: new Price(89.90, 0),
-				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
-			}),
-			new Sell({
 				price: new Price(89.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
 			}),
 			new Sell({
 				price: new Price(78.68, 11.52),
 				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
-			}),
-			new Sell({
-				price: new Price(90.39, 0),
-				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
 			}),
 			new Sell({
 				price: new Price(79.18, 12.56),
@@ -198,9 +190,17 @@ const setup = new Setup([
 				price: new Price(80.97, 11.39),
 				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
 			}),
+			new Sell({
+				price: new Price(89.90, 4.99),
+				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
+			}),
+			new Sell({
+				price: new Price(90.39, 4.99),
+				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
+			}),
 		],
 		bestPrice: new Price(81.95, 5.23),
-		target: null,
+		target: 80,
 	}),
 	new Component({
 		type: Type.PSU,
@@ -218,16 +218,16 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ali_puis_ref_est_in20000189.html"),
 			}),
 			new Sell({
-				price: new Price(209.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
-			}),
-			new Sell({
 				price: new Price(202.34, 9.90),
 				link: new Link("https://www.amazon.es/dp/B083SVLLCQ"),
 			}),
+			new Sell({
+				price: new Price(209.99, 4.99),
+				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
+			}),
 		],
 		bestPrice: new Price(193.02, 9.90),
-		target: null,
+		target: 200,
 	}),
 	new Component({
 		type: Type.CASE,
@@ -241,16 +241,16 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B07C46L1D8"),
 			}),
 			new Sell({
-				price: new Price(239.99, 0),
+				price: new Price(243.83, 0),
 				link: new Link("https://www.amazon.fr/dp/B07C46L1D8"),
 			}),
 			new Sell({
-				price: new Price(276.34, 0),
+				price: new Price(275.81, 0),
 				link: new Link("https://www.amazon.es/dp/B07C46L1D8"),
 			}),
 		],
 		bestPrice: new Price(216.41, 19.61),
-		target: null,
+		target: 220,
 	}),
 	new Component({
 		type: Type.KEYBOARD,
@@ -273,7 +273,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(158.49, 0),
-		target: 130,
+		target: 140,
 	}),
 ]);
 

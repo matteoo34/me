@@ -7,21 +7,16 @@
 	margin: initial;
 }
 
-#total .current-amount {
+#total .current-amount, #total .best-amount {
 	font-size: 1.5rem;
 	font-weight: 900;
 }
 
-#total .current-delivery {
+#total .current-delivery, #total .best-delivery {
 	margin-bottom: .5rem;
 }
 
-#total .best-amount {
-	color: var(--secondary);
+#total .target-total {
+	color: var(--green);
 	font-size: 1.25rem;
-}
-
-#total .best-delivery {
-	color: var(--secondary);
-	font-size: .75rem;
 }
