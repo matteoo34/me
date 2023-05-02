@@ -70,7 +70,11 @@ export class Setup {
 				tr.querySelector(".summary .delivery").textContent = `including ${bestPrice.getDeliveryAmount().toFixed(2)}€ delivery`;
 			}
 
-			tr.querySelector(".summary .target").textContent = `Target: ${component.getTarget().toFixed(2)}€`;
+			const target = component.getTarget();
+
+			if (target !== null) {
+				tr.querySelector(".summary .target").textContent = `Target: ${target.toFixed(2)}€`;
+			}
 
 			body.appendChild(tr);
 

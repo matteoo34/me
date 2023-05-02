@@ -8,6 +8,7 @@ table .sells > div {
 }
 
 table .sells .sell {
+	flex: 1;
 	padding: .5rem;
 	border-right: 1px solid var(--black);
 	background-color: var(--primary);
