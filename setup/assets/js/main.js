@@ -23,7 +23,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(469.46, 0),
+				price: new Price(468.46, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
 			}),
 		],
@@ -42,11 +42,11 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B09JSZZXD4"),
 			}),
 			new Sell({
-				price: new Price(376.86, 9.90),
+				price: new Price(378.99, 8.00),
 				link: new Link("https://www.amazon.fr/dp/B09JSZZXD4"),
 			}),
 			new Sell({
-				price: new Price(380.00, 9.90),
+				price: new Price(380.89, 9.90),
 				link: new Link("https://www.amazon.es/dp/B09JSZZXD4"),
 			}),
 		],
@@ -68,11 +68,11 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_reliq_puis_ref_est_in20005600.html"),
 			}),
 			new Sell({
-				price: new Price(136.38, 0),
+				price: new Price(136.31, 0),
 				link: new Link("https://www.amazon.fr/dp/B08K3P1KRY"),
 			}),
 			new Sell({
-				price: new Price(128.72, 9.90),
+				price: new Price(127.70, 9.90),
 				link: new Link("https://www.amazon.es/dp/B08K3P1KRY"),
 			}),
 		],
@@ -91,7 +91,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B082DJ19CK"),
 			}),
 			new Sell({
-				price: new Price(91.99, 4.79),
+				price: new Price(90.99, 4.79),
 				link: new Link("https://www.amazon.de/dp/B082DGZJ9C"),
 			}),
 			new Sell({
@@ -110,7 +110,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31q7quYSDvL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(1091.00, 0),
+				price: new Price(1087.00, 0),
 				link: new Link("https://shop-eu-fr.amd.com/amd-radeon-rx-7900-xtx-graphics"),
 			}),
 		],
@@ -133,7 +133,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
-				price: new Price(105.99, 4.82),
+				price: new Price(103.98, 4.82),
 				link: new Link("https://www.amazon.es/dp/B09F5Z6BJ6"),
 			}),
 		],
@@ -152,7 +152,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
-				price: new Price(194.88, 0),
+				price: new Price(195.88, 0),
 				link: new Link("https://www.amazon.fr/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
@@ -171,10 +171,6 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Z-sFIFVOL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(81.95, 5.23),
-				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
-			}),
-			new Sell({
 				price: new Price(89.90, 0),
 				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
 			}),
@@ -183,20 +179,12 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
 			}),
 			new Sell({
-				price: new Price(78.68, 11.52),
-				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
-			}),
-			new Sell({
 				price: new Price(90.39, 0),
 				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
 			}),
 			new Sell({
-				price: new Price(79.18, 12.56),
+				price: new Price(80.11, 12.67),
 				link: new Link("https://www.amazon.es/dp/B07115ZSQ6"),
-			}),
-			new Sell({
-				price: new Price(80.97, 11.39),
-				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
 			}),
 		],
 		bestPrice: new Price(81.95, 5.23),
@@ -245,7 +233,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B07C46L1D8"),
 			}),
 			new Sell({
-				price: new Price(275.81, 0),
+				price: new Price(277.00, 0),
 				link: new Link("https://www.amazon.es/dp/B07C46L1D8"),
 			}),
 		],
@@ -264,12 +252,12 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B07VTSZ63W"),
 			}),
 			new Sell({
-				price: new Price(184.99, 0),
-				link: new Link("https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
+				price: new Price(173.89, 0),
+				link: new Link("https://www.amazon.fr/dp/B07VV8R58C"),
 			}),
 			new Sell({
 				price: new Price(184.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B07VV8R58C"),
+				link: new Link("https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
 			}),
 		],
 		bestPrice: new Price(158.49, 0),
