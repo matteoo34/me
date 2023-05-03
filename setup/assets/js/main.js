@@ -15,22 +15,22 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31Byi3U8YDL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(425.45, 4.61),
-				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
-			}),
-			new Sell({
-				price: new Price(444.32, 4.61),
+				price: new Price(443.30, 4.61),
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(468.46, 0),
+				price: new Price(447.56, 11.95),
+				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
+			}),
+			new Sell({
+				price: new Price(472.57, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
 			}),
 		],
 		bestPrice: new Price(425.45, 4.61),
 		target: 430,
 	}),
-	new Component({
+	/* new Component({
 		type: Type.MOTHERBOARD,
 		brand: Brand.ASUS,
 		model: "ROG Strix Z690-F Gaming",
@@ -38,7 +38,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/51mQQ+7bWuL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(350.99, 9.90),
+				price: new Price(350.79, 9.90),
 				link: new Link("https://www.amazon.de/dp/B09JSZZXD4"),
 			}),
 			new Sell({
@@ -50,8 +50,35 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.es/dp/B09JSZZXD4"),
 			}),
 		],
-		bestPrice: new Price(350.99, 9.90),
+		bestPrice: new Price(350.79, 9.90),
 		target: 340,
+	}), */
+	new Component({
+		type: Type.MOTHERBOARD,
+		brand: Brand.ASUS,
+		model: "ROG Strix Z790-F Gaming",
+		description: "ATX • LGA 1700 • Wi-Fi",
+		image: "https://m.media-amazon.com/images/I/41Er4p78RML._AC_US256_.jpg",
+		sells: [
+			new Sell({
+				price: new Price(424.88, 7.77),
+				link: new Link("https://www.amazon.de/dp/B0BH94RXPC"),
+			}),
+			new Sell({
+				price: new Price(433.49, 0),
+				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_cm_1700_puis_ref_est_in20014869.html"),
+			}),
+			new Sell({
+				price: new Price(449.53,  11.66),
+				link: new Link("https://www.amazon.fr/dp/B0BH94RXPC"),
+			}),
+			new Sell({
+				price: new Price(474.20, 9.90),
+				link: new Link("https://www.amazon.es/dp/B0BH94RXPC"),
+			}),
+		],
+		bestPrice: new Price(424.88, 7.77),
+		target: 420,
 	}),
 	new Component({
 		type: Type.WATERCOOLING,
@@ -60,23 +87,23 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31SjTwL4oGL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(119.99, 9.90),
+				price: new Price(117.73, 7.94),
 				link: new Link("https://www.amazon.de/dp/B08K3P1KRY"),
+			}),
+			new Sell({
+				price: new Price(131.60, 0),
+				link: new Link("https://www.amazon.fr/dp/B08K3P1KRY"),
 			}),
 			new Sell({
 				price: new Price(132.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_reliq_puis_ref_est_in20005600.html"),
 			}),
 			new Sell({
-				price: new Price(136.31, 0),
-				link: new Link("https://www.amazon.fr/dp/B08K3P1KRY"),
-			}),
-			new Sell({
-				price: new Price(127.70, 9.90),
+				price: new Price(128.01, 9.90),
 				link: new Link("https://www.amazon.es/dp/B08K3P1KRY"),
 			}),
 		],
-		bestPrice: new Price(119.99, 9.90),
+		bestPrice: new Price(117.73, 7.94),
 		target: 110,
 	}),
 	new Component({
@@ -91,12 +118,24 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B082DJ19CK"),
 			}),
 			new Sell({
+				price: new Price(84.90, 4.74),
+				link: new Link("https://www.amazon.de/dp/B082DJ19CK"),
+			}),
+			new Sell({
 				price: new Price(90.99, 4.79),
 				link: new Link("https://www.amazon.de/dp/B082DGZJ9C"),
 			}),
 			new Sell({
 				price: new Price(94.99, 4.74),
 				link: new Link("https://www.amazon.es/dp/B082DJ19CK"),
+			}),
+			new Sell({
+				price: new Price(103.88, 0),
+				link: new Link("https://www.amazon.fr/dp/B082DGZJ9C"),
+			}),
+			new Sell({
+				price: new Price(101.45, 4.79),
+				link: new Link("https://www.amazon.es/dp/B082DGZJ9C"),
 			}),
 		],
 		bestPrice: new Price(88.99, 0),
@@ -115,7 +154,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(1077.00, 0),
-		target: 1100,
+		target: 1087,
 	}),
 	new Component({
 		type: Type.SSD,
@@ -135,6 +174,10 @@ const setup = new Setup([
 			new Sell({
 				price: new Price(103.98, 4.82),
 				link: new Link("https://www.amazon.es/dp/B09F5Z6BJ6"),
+			}),
+			new Sell({
+				price: new Price(112.99, 0),
+				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ssd_puis_ref_est_in20010807.html"),
 			}),
 		],
 		bestPrice: new Price(93.99, 0),
@@ -171,6 +214,31 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Z-sFIFVOL._AC_US256_.jpg",
 		sells: [
 			new Sell({
+				price: new Price(72.90, 5.40),
+				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
+			}),
+			new Sell({
+				price: new Price(75.78, 5.23),
+				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
+			}),
+			new Sell({
+				price: new Price(83.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
+			}),
+			// Different model? 7200 RPM
+			/* new Sell({
+				price: new Price(84.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B07JLB1P66"),
+			}), */
+			new Sell({
+				price: new Price(81.95, 5.23),
+				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
+			}),
+			new Sell({
+				price: new Price(83.66, 6.00),
+				link: new Link("https://www.amazon.de/dp/B07115ZSQ6"),
+			}),
+			new Sell({
 				price: new Price(89.90, 0),
 				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
 			}),
@@ -183,11 +251,11 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
 			}),
 			new Sell({
-				price: new Price(80.11, 12.67),
+				price: new Price(79.18, 12.56),
 				link: new Link("https://www.amazon.es/dp/B07115ZSQ6"),
 			}),
 		],
-		bestPrice: new Price(81.95, 5.23),
+		bestPrice: new Price(72.90, 5.40),
 		target: 80,
 	}),
 	new Component({
@@ -229,11 +297,11 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B07C46L1D8"),
 			}),
 			new Sell({
-				price: new Price(243.83, 0),
+				price: new Price(243.71, 0),
 				link: new Link("https://www.amazon.fr/dp/B07C46L1D8"),
 			}),
 			new Sell({
-				price: new Price(277.00, 0),
+				price: new Price(294.42, 0),
 				link: new Link("https://www.amazon.es/dp/B07C46L1D8"),
 			}),
 		],
@@ -247,20 +315,25 @@ const setup = new Setup([
 		description: "AZERTY • GL Tactile switches",
 		image: "https://m.media-amazon.com/images/I/4117+8ARx3L._AC_US256_.jpg",
 		sells: [
-			new Sell({
+			// QWERTY layout?
+			/* new Sell({
 				price: new Price(158.49, 0),
 				link: new Link("https://www.amazon.fr/dp/B07VTSZ63W"),
-			}),
+			}), */
 			new Sell({
 				price: new Price(173.89, 0),
 				link: new Link("https://www.amazon.fr/dp/B07VV8R58C"),
+			}),
+			new Sell({
+				price: new Price(174.29, 6.84),
+				link: new Link("https://www.amazon.de/dp/B07VV8R58C"),
 			}),
 			new Sell({
 				price: new Price(184.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
 			}),
 		],
-		bestPrice: new Price(158.49, 0),
+		bestPrice: new Price(173.89, 0),
 		target: 140,
 	}),
 ]);
