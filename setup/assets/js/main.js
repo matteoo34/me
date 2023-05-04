@@ -19,12 +19,12 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(447.56, 11.95),
-				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
+				price: new Price(458.82, 0),
+				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(472.57, 0),
-				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
+				price: new Price(464.06, 11.95),
+				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
 			}),
 		],
 		bestPrice: new Price(425.45, 4.61),
@@ -61,7 +61,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Er4p78RML._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(424.88, 7.77),
+				price: new Price(425.16, 7.77),
 				link: new Link("https://www.amazon.de/dp/B0BH94RXPC"),
 			}),
 			new Sell({
@@ -69,7 +69,7 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_cm_1700_puis_ref_est_in20014869.html"),
 			}),
 			new Sell({
-				price: new Price(449.53,  11.66),
+				price: new Price(470.41, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BH94RXPC"),
 			}),
 			new Sell({
@@ -78,7 +78,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(424.88, 7.77),
-		target: 420,
+		target: 430,
 	}),
 	new Component({
 		type: Type.WATERCOOLING,
@@ -91,20 +91,20 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B08K3P1KRY"),
 			}),
 			new Sell({
-				price: new Price(131.60, 0),
-				link: new Link("https://www.amazon.fr/dp/B08K3P1KRY"),
+				price: new Price(124.97, 9.90),
+				link: new Link("https://www.amazon.es/dp/B08K3P1KRY"),
 			}),
 			new Sell({
 				price: new Price(132.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_reliq_puis_ref_est_in20005600.html"),
 			}),
 			new Sell({
-				price: new Price(128.01, 9.90),
-				link: new Link("https://www.amazon.es/dp/B08K3P1KRY"),
+				price: new Price(132.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B08K3P1KRY"),
 			}),
 		],
 		bestPrice: new Price(117.73, 7.94),
-		target: 110,
+		target: 120,
 	}),
 	new Component({
 		type: Type.RAM,
@@ -175,10 +175,6 @@ const setup = new Setup([
 				price: new Price(103.98, 4.82),
 				link: new Link("https://www.amazon.es/dp/B09F5Z6BJ6"),
 			}),
-			new Sell({
-				price: new Price(112.99, 0),
-				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ssd_puis_ref_est_in20010807.html"),
-			}),
 		],
 		bestPrice: new Price(93.99, 0),
 		target: 90,
@@ -195,7 +191,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
-				price: new Price(195.88, 0),
+				price: new Price(194.88, 0),
 				link: new Link("https://www.amazon.fr/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
@@ -223,13 +219,12 @@ const setup = new Setup([
 			}),
 			new Sell({
 				price: new Price(83.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
+			}),
+			new Sell({
+				price: new Price(83.99, 0),
 				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
 			}),
-			// Different model? 7200 RPM
-			/* new Sell({
-				price: new Price(84.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B07JLB1P66"),
-			}), */
 			new Sell({
 				price: new Price(81.95, 5.23),
 				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
@@ -237,10 +232,6 @@ const setup = new Setup([
 			new Sell({
 				price: new Price(83.66, 6.00),
 				link: new Link("https://www.amazon.de/dp/B07115ZSQ6"),
-			}),
-			new Sell({
-				price: new Price(89.90, 0),
-				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
 			}),
 			new Sell({
 				price: new Price(89.99, 0),
@@ -306,7 +297,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(216.41, 19.61),
-		target: 220,
+		target: 230,
 	}),
 	new Component({
 		type: Type.KEYBOARD,
@@ -317,7 +308,7 @@ const setup = new Setup([
 		sells: [
 			// QWERTY layout?
 			/* new Sell({
-				price: new Price(158.49, 0),
+				price: new Price(164.85, 0),
 				link: new Link("https://www.amazon.fr/dp/B07VTSZ63W"),
 			}), */
 			new Sell({
@@ -334,7 +325,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(173.89, 0),
-		target: 140,
+		target: 170,
 	}),
 ]);
 

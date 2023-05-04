@@ -17,6 +17,6 @@
 }
 
 #total .target-total {
-	color: var(--green);
+	color: var(--tertiary);
 	font-size: 1.25rem;
 }

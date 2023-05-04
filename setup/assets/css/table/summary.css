@@ -9,7 +9,7 @@ table .summary .total {
 	font-weight: 200;
 }
 table .summary .total.reached {
-	color: var(--green);
+	color: var(--tertiary);
 }
 
 table .summary .delivery {
@@ -17,13 +17,12 @@ table .summary .delivery {
 	font-weight: 200;
 }
 table .summary .delivery.reached {
-	color: var(--green);
+	color: var(--tertiary);
 }
 
 table .summary .target {
-	color: var(--red);
 	font-size: .75rem;
 }
 table .summary .target.reached {
-	color: var(--green);
+	color: var(--tertiary);
 }
