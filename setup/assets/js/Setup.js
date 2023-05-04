@@ -93,6 +93,7 @@ export class Setup {
 			totalTarget += target;
 
 			body.appendChild(tr);
+			tr.querySelector(".sells div").style.height = `${tr.offsetHeight + 1}px`;
 		}
 
 		total.querySelector(".current-amount").textContent = `Current best total: ${totalPrice.getTotalAmount().toFixed(2)}€`;
