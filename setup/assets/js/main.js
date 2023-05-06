@@ -30,29 +30,6 @@ const setup = new Setup([
 		bestPrice: new Price(425.45, 4.61),
 		target: 430,
 	}),
-	/* new Component({
-		type: Type.MOTHERBOARD,
-		brand: Brand.ASUS,
-		model: "ROG Strix Z690-F Gaming",
-		description: "ATX • LGA 1700 • Wi-Fi",
-		image: "https://m.media-amazon.com/images/I/51mQQ+7bWuL._AC_US256_.jpg",
-		sells: [
-			new Sell({
-				price: new Price(350.79, 9.90),
-				link: new Link("https://www.amazon.de/dp/B09JSZZXD4"),
-			}),
-			new Sell({
-				price: new Price(378.99, 8.00),
-				link: new Link("https://www.amazon.fr/dp/B09JSZZXD4"),
-			}),
-			new Sell({
-				price: new Price(380.89, 9.90),
-				link: new Link("https://www.amazon.es/dp/B09JSZZXD4"),
-			}),
-		],
-		bestPrice: new Price(350.79, 9.90),
-		target: 340,
-	}), */
 	new Component({
 		type: Type.MOTHERBOARD,
 		brand: Brand.ASUS,
@@ -109,37 +86,29 @@ const setup = new Setup([
 	new Component({
 		type: Type.RAM,
 		brand: Brand.CORSAIR,
-		model: "Vengeance RGB PRO 32Gb (2x16Gb)",
-		description: "DDR4 3600MHz • CL18 (18-22-22-42)",
-		image: "https://m.media-amazon.com/images/I/411hR8vGwRL._AC_US256_.jpg",
+		model: "Vengeance 32Gb (2x16Gb)",
+		description: "DDR5 5600MHz • CL36 • Black",
+		image: "https://m.media-amazon.com/images/I/41Q8eUJZndL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(88.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B082DJ19CK"),
+				price: new Price(103.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B09NCNF2ZQ"),
 			}),
 			new Sell({
-				price: new Price(84.90, 4.74),
-				link: new Link("https://www.amazon.de/dp/B082DJ19CK"),
+				price: new Price(102.99, 4.64),
+				link: new Link("https://www.amazon.de/dp/B09NCNF2ZQ"),
 			}),
 			new Sell({
-				price: new Price(90.99, 4.79),
-				link: new Link("https://www.amazon.de/dp/B082DGZJ9C"),
+				price: new Price(112.99, 4.65),
+				link: new Link("https://www.amazon.de/dp/B0B15DC288"),
 			}),
 			new Sell({
-				price: new Price(94.99, 4.74),
-				link: new Link("https://www.amazon.es/dp/B082DJ19CK"),
-			}),
-			new Sell({
-				price: new Price(103.88, 0),
-				link: new Link("https://www.amazon.fr/dp/B082DGZJ9C"),
-			}),
-			new Sell({
-				price: new Price(101.45, 4.79),
-				link: new Link("https://www.amazon.es/dp/B082DGZJ9C"),
+				price: new Price(114.99, 4.64),
+				link: new Link("https://www.amazon.es/dp/B09NCNF2ZQ"),
 			}),
 		],
-		bestPrice: new Price(88.99, 0),
-		target: 80,
+		bestPrice: new Price(103.99, 0),
+		target: 100,
 	}),
 	new Component({
 		type: Type.GPU,
@@ -306,11 +275,6 @@ const setup = new Setup([
 		description: "AZERTY • GL Tactile switches",
 		image: "https://m.media-amazon.com/images/I/4117+8ARx3L._AC_US256_.jpg",
 		sells: [
-			// QWERTY layout?
-			/* new Sell({
-				price: new Price(164.85, 0),
-				link: new Link("https://www.amazon.fr/dp/B07VTSZ63W"),
-			}), */
 			new Sell({
 				price: new Price(173.89, 0),
 				link: new Link("https://www.amazon.fr/dp/B07VV8R58C"),
