@@ -15,20 +15,20 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31Byi3U8YDL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(443.30, 4.61),
+				price: new Price(441.90, 4.61),
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(458.82, 0),
-				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
+				price: new Price(453.47, 0),
+				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(464.06, 11.95),
-				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
+				price: new Price(472.26, 0),
+				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
 			}),
 		],
 		bestPrice: new Price(425.45, 4.61),
-		target: 430,
+		target: 440,
 	}),
 	new Component({
 		type: Type.MOTHERBOARD,
@@ -38,7 +38,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Er4p78RML._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(425.16, 7.77),
+				price: new Price(424.90, 7.77),
 				link: new Link("https://www.amazon.de/dp/B0BH94RXPC"),
 			}),
 			new Sell({
@@ -46,42 +46,35 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_cm_1700_puis_ref_est_in20014869.html"),
 			}),
 			new Sell({
-				price: new Price(470.41, 0),
+				price: new Price(469.30, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(474.20, 9.90),
+				price: new Price(474.43, 9.90),
 				link: new Link("https://www.amazon.es/dp/B0BH94RXPC"),
 			}),
 		],
 		bestPrice: new Price(424.88, 7.77),
-		target: 430,
+		target: 440,
 	}),
 	new Component({
 		type: Type.WATERCOOLING,
-		brand: Brand.BE_QUIET,
-		model: "Pure Loop 360mm",
-		image: "https://m.media-amazon.com/images/I/31SjTwL4oGL._AC_US256_.jpg",
+		brand: Brand.CORSAIR,
+		model: "iCUE H150i RGB Elite",
+		description: "360mm • LGA 1700",
+		image: "https://m.media-amazon.com/images/I/41V6orrMThL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(117.73, 7.94),
-				link: new Link("https://www.amazon.de/dp/B08K3P1KRY"),
+				price: new Price(183.82, 6.98),
+				link: new Link("https://www.amazon.de/dp/B09YCHFXQL"),
 			}),
 			new Sell({
-				price: new Price(124.97, 9.90),
-				link: new Link("https://www.amazon.es/dp/B08K3P1KRY"),
-			}),
-			new Sell({
-				price: new Price(132.99, 0),
-				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_reliq_puis_ref_est_in20005600.html"),
-			}),
-			new Sell({
-				price: new Price(132.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B08K3P1KRY"),
+				price: new Price(184.32, 9.90),
+				link: new Link("https://www.amazon.fr/dp/B09YCHFXQL"),
 			}),
 		],
-		bestPrice: new Price(117.73, 7.94),
-		target: 120,
+		bestPrice: new Price(183.82, 6.98),
+		target: 180,
 	}),
 	new Component({
 		type: Type.RAM,
@@ -99,6 +92,22 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B09NCNF2ZQ"),
 			}),
 			new Sell({
+				price: new Price(102.99, 4.65),
+				link: new Link("https://www.amazon.de/dp/B0BD4V2Q42"),
+			}),
+			new Sell({
+				price: new Price(103.99, 4.63),
+				link: new Link("https://www.amazon.de/dp/B0BD4R49FK"),
+			}),
+			new Sell({
+				price: new Price(106.34, 4.64),
+				link: new Link("https://www.amazon.de/dp/B09NCPTVX5"),
+			}),
+			new Sell({
+				price: new Price(113.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B0B15DC288"),
+			}),
+			new Sell({
 				price: new Price(112.99, 4.65),
 				link: new Link("https://www.amazon.de/dp/B0B15DC288"),
 			}),
@@ -108,7 +117,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(103.99, 0),
-		target: 100,
+		target: 110,
 	}),
 	new Component({
 		type: Type.GPU,
@@ -122,7 +131,7 @@ const setup = new Setup([
 				link: new Link("https://shop-eu-fr.amd.com/amd-radeon-rx-7900-xtx-graphics"),
 			}),
 		],
-		bestPrice: new Price(1077.00, 0),
+		bestPrice: new Price(1069.00, 0),
 		target: 1087,
 	}),
 	new Component({
@@ -146,7 +155,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(93.99, 0),
-		target: 90,
+		target: 100,
 	}),
 	new Component({
 		type: Type.SSD,
@@ -169,7 +178,7 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(172.85, 4.66),
-		target: 170,
+		target: 180,
 	}),
 	new Component({
 		type: Type.HDD,
@@ -183,20 +192,28 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
 			}),
 			new Sell({
-				price: new Price(75.78, 5.23),
-				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
-			}),
-			new Sell({
-				price: new Price(83.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
-			}),
-			new Sell({
-				price: new Price(83.99, 0),
+				price: new Price(86.89, 0),
 				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
+			}),
+			new Sell({
+				price: new Price(86.89, 0),
+				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
 			}),
 			new Sell({
 				price: new Price(81.95, 5.23),
 				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
+			}),
+			new Sell({
+				price: new Price(84.02, 5.23),
+				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
+			}),
+			new Sell({
+				price: new Price(89.38, 0),
+				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
+			}),
+			new Sell({
+				price: new Price(77.04, 12.56),
+				link: new Link("https://www.amazon.es/dp/B07115ZSQ6"),
 			}),
 			new Sell({
 				price: new Price(83.66, 6.00),
@@ -207,12 +224,8 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
 			}),
 			new Sell({
-				price: new Price(90.39, 0),
-				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
-			}),
-			new Sell({
-				price: new Price(79.18, 12.56),
-				link: new Link("https://www.amazon.es/dp/B07115ZSQ6"),
+				price: new Price(94.99, 5.40),
+				link: new Link("https://www.amazon.es/dp/B07D9C7SQH"),
 			}),
 		],
 		bestPrice: new Price(72.90, 5.40),
@@ -238,12 +251,20 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
 			}),
 			new Sell({
+				price: new Price(201.35, 9.90),
+				link: new Link("https://www.amazon.es/dp/B078WZSN2W"),
+			}),
+			new Sell({
 				price: new Price(202.34, 9.90),
 				link: new Link("https://www.amazon.es/dp/B083SVLLCQ"),
 			}),
+			new Sell({
+				price: new Price(202.04, 13.58),
+				link: new Link("https://www.amazon.de/dp/B078WZSN2W"),
+			}),
 		],
 		bestPrice: new Price(193.02, 6.00),
-		target: 190,
+		target: 200,
 	}),
 	new Component({
 		type: Type.CASE,
@@ -253,20 +274,20 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41y8mm4LplL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(216.41, 19.61),
-				link: new Link("https://www.amazon.de/dp/B07C46L1D8"),
-			}),
-			new Sell({
-				price: new Price(243.71, 0),
+				price: new Price(244.00, 9.90),
 				link: new Link("https://www.amazon.fr/dp/B07C46L1D8"),
 			}),
 			new Sell({
-				price: new Price(294.42, 0),
+				price: new Price(237.80, 19.61),
+				link: new Link("https://www.amazon.de/dp/B07C46L1D8"),
+			}),
+			new Sell({
+				price: new Price(249.00, 61.29),
 				link: new Link("https://www.amazon.es/dp/B07C46L1D8"),
 			}),
 		],
 		bestPrice: new Price(216.41, 19.61),
-		target: 230,
+		target: 240,
 	}),
 	new Component({
 		type: Type.KEYBOARD,
@@ -276,11 +297,11 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/4117+8ARx3L._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(173.89, 0),
+				price: new Price(163.46, 0),
 				link: new Link("https://www.amazon.fr/dp/B07VV8R58C"),
 			}),
 			new Sell({
-				price: new Price(174.29, 6.84),
+				price: new Price(163.64, 6.84),
 				link: new Link("https://www.amazon.de/dp/B07VV8R58C"),
 			}),
 			new Sell({
@@ -288,7 +309,7 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
 			}),
 		],
-		bestPrice: new Price(173.89, 0),
+		bestPrice: new Price(163.46, 0),
 		target: 170,
 	}),
 ]);
