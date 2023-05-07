@@ -137,7 +137,7 @@ const setup = new Setup([
 	new Component({
 		type: Type.SSD,
 		brand: Brand.CORSAIR,
-		model: "MP600 PRO XT 1Tb M.2 NVMe Gen4",
+		model: "MP600 PRO XT 1Tb M.2 NVMe",
 		description: "Gen4 • PCIe x4 • Read 7100Mb • Write 5800Mb",
 		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		sells: [
@@ -160,7 +160,7 @@ const setup = new Setup([
 	new Component({
 		type: Type.SSD,
 		brand: Brand.CORSAIR,
-		model: "MP600 PRO XT 2Tb M.2 NVMe Gen4",
+		model: "MP600 PRO XT 2Tb M.2 NVMe",
 		description: "Gen4 • PCIe x4 • Read 7100Mb • Write 6800Mb",
 		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		sells: [
@@ -179,6 +179,25 @@ const setup = new Setup([
 		],
 		bestPrice: new Price(172.85, 4.66),
 		target: 180,
+	}),
+	new Component({
+		type: Type.SSD,
+		brand: Brand.CORSAIR,
+		model: "MP600 PRO LPX 500Gb M.2 NVMe",
+		description: "Gen4 • PCIe x4 • Read 7100Mb • Write 3700Mb",
+		image: "https://m.media-amazon.com/images/I/31tEZgyV0vL._AC_US256_.jpg",
+		sells: [
+			new Sell({
+				price: new Price(72.52, 4.99),
+				link: new Link("https://www.amazon.fr/dp/B09Q2NL53M"),
+			}),
+			new Sell({
+				price: new Price(74.99, 4.60),
+				link: new Link("https://www.amazon.es/dp/B09Q2NL53M"),
+			}),
+		],
+		bestPrice: new Price(72.52, 4.99),
+		target: 70,
 	}),
 	new Component({
 		type: Type.HDD,

@@ -32,7 +32,7 @@
 1. [Insomnia](https://insomnia.rest/download)
 1. [JDK 20](https://www.oracle.com/fr/java/technologies/downloads)
 1. [MinGW](https://sourceforge.net/projects/mingw) (gcc & g++)
-1. [Emscripten](https://emscripten.org/docs/getting_started/downloads.html)
+1. [Emscripten SDK](https://emscripten.org/docs/getting_started/downloads.html)
 1. [VTFReader](https://gamebanana.com/tools/download/5537#FileInfo_163691)
 1. [GCFScape](https://nemstools.github.io/pages/GCFScape-Download.html)
 
