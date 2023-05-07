@@ -15,15 +15,15 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31Byi3U8YDL._AC_US256_.jpg",
 		sells: [
 			new Sell({
+				price: new Price(425.45, 4.61),
+				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
+			}),
+			new Sell({
 				price: new Price(441.90, 4.61),
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(453.47, 0),
-				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
-			}),
-			new Sell({
-				price: new Price(472.26, 0),
+				price: new Price(485.82, 8.00),
 				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
 			}),
 		],
@@ -46,7 +46,7 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_cm_1700_puis_ref_est_in20014869.html"),
 			}),
 			new Sell({
-				price: new Price(469.30, 0),
+				price: new Price(457.64, 11.66),
 				link: new Link("https://www.amazon.fr/dp/B0BH94RXPC"),
 			}),
 			new Sell({
@@ -54,7 +54,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.es/dp/B0BH94RXPC"),
 			}),
 		],
-		bestPrice: new Price(424.88, 7.77),
+		bestPrice: new Price(424.90, 7.77),
 		target: 440,
 	}),
 	new Component({
@@ -96,7 +96,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0BD4V2Q42"),
 			}),
 			new Sell({
-				price: new Price(103.99, 4.63),
+				price: new Price(103.89, 4.63),
 				link: new Link("https://www.amazon.de/dp/B0BD4R49FK"),
 			}),
 			new Sell({
@@ -211,23 +211,19 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
 			}),
 			new Sell({
-				price: new Price(86.89, 0),
+				price: new Price(85.30, 0),
 				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
 			}),
 			new Sell({
-				price: new Price(86.89, 0),
+				price: new Price(85.30, 0),
 				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
 			}),
 			new Sell({
-				price: new Price(81.95, 5.23),
-				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
-			}),
-			new Sell({
-				price: new Price(84.02, 5.23),
+				price: new Price(75.74, 5.23),
 				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
 			}),
 			new Sell({
-				price: new Price(89.38, 0),
+				price: new Price(90.39, 0),
 				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
 			}),
 			new Sell({
@@ -270,7 +266,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
 			}),
 			new Sell({
-				price: new Price(201.35, 9.90),
+				price: new Price(200.41, 9.90),
 				link: new Link("https://www.amazon.es/dp/B078WZSN2W"),
 			}),
 			new Sell({
