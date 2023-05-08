@@ -38,7 +38,8 @@ export class Setup {
 
 			tr.querySelector(".type").textContent = component.getType();
 			tr.querySelector(".image img").src = component.getImage();
-			tr.querySelector(".model .name").textContent = `${component.getBrand()} ${component.getModel()}`;
+			if (component.isCertain()) tr.querySelector(".model .name").append(template.content.querySelector(".certainty-badge").cloneNode());
+			tr.querySelector(".model .name").append(`${component.getBrand()} ${component.getModel()}`);
 			tr.querySelector(".model .description").textContent = component.getDescription();
 
 			const bestSell = component.getBestSell();
