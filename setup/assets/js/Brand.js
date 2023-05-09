@@ -32,4 +32,5 @@ Brand.BE_QUIET = new Brand("be quiet!");
 Brand.CORSAIR = new Brand("Corsair");
 Brand.INTEL = new Brand("Intel");
 Brand.LOGITECH = new Brand("Logitech");
+Brand.SAMSUNG = new Brand("Samsung");
 Brand.SEAGATE = new Brand("Seagate");
