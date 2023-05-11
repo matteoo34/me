@@ -13,3 +13,11 @@ table td:not(.type) {
 	height: 0;
 	border: 1px solid var(--black);
 }
+
+table tbody tr.buyed {
+	opacity: .5;
+	transition-duration: .2s;
+}
+table tbody tr.buyed:hover {
+	opacity: 1;
+}

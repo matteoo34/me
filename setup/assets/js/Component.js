@@ -59,6 +59,12 @@ export class Component {
 	#certainty;
 
 	/**
+	 * @private
+	 * @type {Boolean}
+	 */
+	#buyed;
+
+	/**
 	 * @param {Object} options
 	 * @param {Type} options.type
 	 * @param {Brand} options.brand
@@ -69,8 +75,9 @@ export class Component {
 	 * @param {?Price} [options.bestPrice]
 	 * @param {?Number} [options.targetPrice]
 	 * @param {?Boolean} [options.certainty=false]
+	 * @param {?Boolean} [options.buyed=false]
 	 */
-	constructor({type, brand, model, description = null, image, sells, bestPrice = null, target = null, certainty = false}) {
+	constructor({type, brand, model, description = null, image, sells, bestPrice = null, target = null, certainty = false, buyed = false}) {
 		this.#type = type;
 		this.#brand = brand;
 		this.#model = model;
@@ -80,6 +87,7 @@ export class Component {
 		this.#bestPrice = bestPrice;
 		this.#target = target;
 		this.#certainty = certainty;
+		this.#buyed = buyed;
 	}
 
 	/** @returns {Type} */
@@ -170,6 +178,16 @@ export class Component {
 	/** @param {Boolean} certainty */
 	setCertainty(certainty) {
 		this.#certainty = certainty;
+	}
+
+	/** @returns {Boolean} */
+	isBuyed() {
+		return this.#buyed;
+	}
+
+	/** @param {Boolean} buyed */
+	setBuyed(buyed) {
+		this.#buyed = buyed;
 	}
 
 	/** @returns {?Sell} */

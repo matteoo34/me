@@ -19,25 +19,26 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(441.90, 4.61),
+				price: new Price(440.90, 4.61),
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(472.26, 0),
+				price: new Price(460.49, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
-			}),
-			new Sell({
-				price: new Price(466.41, 9.90),
-				link: new Link("https://www.amazon.fr/dp/B0BS9CXQZQ"),
 			}),
 			new Sell({
 				price: new Price(499.0, 0),
 				link: new Link("https://www.amazon.es/dp/B0BCF57FL5"),
 			}),
+			new Sell({
+				price: new Price(529.27, 0),
+				link: new Link("https://www.amazon.fr/dp/B0BS9CXQZQ"),
+			}),
 		],
 		bestPrice: new Price(419.89, 4.61),
-		target: 430,
+		target: 424.50,
 		certainty: true,
+		buyed: true,
 	}),
 	new Component({
 		type: Type.MOTHERBOARD,
@@ -47,87 +48,76 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Er4p78RML._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(422.66, 7.77),
+				price: new Price(425.57, 7.77),
 				link: new Link("https://www.amazon.de/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(433.49, 0),
-				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_cm_1700_puis_ref_est_in20014869.html"),
-			}),
-			new Sell({
-				price: new Price(437.34, 11.66),
+				price: new Price(457.34, 11.66),
 				link: new Link("https://www.amazon.fr/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(474.43, 9.90),
+				price: new Price(474.46, 9.90),
 				link: new Link("https://www.amazon.es/dp/B0BH94RXPC"),
+			}),
+			new Sell({
+				price: new Price(509.99, 0),
+				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_cm_1700_puis_ref_est_in20014869.html"),
 			}),
 		],
 		bestPrice: new Price(422.66, 7.77),
-		target: 440,
+		target: 430.43,
 		certainty: true,
+		buyed: true,
 	}),
 	new Component({
 		type: Type.WATERCOOLING,
 		brand: Brand.CORSAIR,
-		model: "iCUE H150i RGB Elite",
-		description: "360mm • LGA 1700",
-		image: "https://m.media-amazon.com/images/I/41V6orrMThL._AC_US256_.jpg",
+		model: "iCUE H150i ELITE LCD",
+		description: "360mm • 3x120mm • LGA 1700",
+		image: "https://m.media-amazon.com/images/I/31dLDYygqUL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(172.89, 15.90),
-				link: new Link("https://www.amazon.de/dp/B09YCHFXQL"),
+				price: new Price(299.00, 11.79),
+				link: new Link("https://www.amazon.fr/dp/B09HDWQKV8"),
 			}),
 			new Sell({
-				price: new Price(184.32, 9.90),
-				link: new Link("https://www.amazon.fr/dp/B09YCHFXQL"),
+				price: new Price(329.00, 0),
+				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_reliq_puis_ref_est_in20011451.html"),
+			}),
+			new Sell({
+				price: new Price(353.67, 1.50),
+				link: new Link("https://www.amazon.es/dp/B09HDWQKV8"),
+			}),
+			new Sell({
+				price: new Price(389.07, 0),
+				link: new Link("https://www.amazon.de/dp/B09HDWQKV8"),
 			}),
 		],
-		bestPrice: new Price(172.89, 15.90),
-		target: 180,
+		bestPrice: new Price(299.00, 11.79),
+		target: 310,
 	}),
 	new Component({
 		type: Type.RAM,
 		brand: Brand.CORSAIR,
 		model: "Vengeance 32Gb (2x16Gb)",
-		description: "DDR5 5600MHz • CL36 • Black",
-		image: "https://m.media-amazon.com/images/I/41Q8eUJZndL._AC_US256_.jpg",
+		description: "DDR5 6400MHz • CL32 • Black",
+		image: "https://m.media-amazon.com/images/I/31s6I6ymzwL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(103.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B09NCNF2ZQ"),
+				price: new Price(134.89, 4.65),
+				link: new Link("https://www.amazon.de/dp/B0BPL9VYPW"),
 			}),
 			new Sell({
-				price: new Price(102.99, 4.64),
-				link: new Link("https://www.amazon.de/dp/B09NCNF2ZQ"),
+				price: new Price(153.88, 0),
+				link: new Link("https://www.amazon.fr/dp/B0BPL9VYPW"),
 			}),
 			new Sell({
-				price: new Price(102.99, 4.65),
-				link: new Link("https://www.amazon.de/dp/B0BD4V2Q42"),
-			}),
-			new Sell({
-				price: new Price(103.89, 4.63),
-				link: new Link("https://www.amazon.de/dp/B0BD4R49FK"),
-			}),
-			new Sell({
-				price: new Price(106.34, 4.64),
-				link: new Link("https://www.amazon.de/dp/B09NCPTVX5"),
-			}),
-			new Sell({
-				price: new Price(113.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B0B15DC288"),
-			}),
-			new Sell({
-				price: new Price(112.99, 4.65),
-				link: new Link("https://www.amazon.de/dp/B0B15DC288"),
-			}),
-			new Sell({
-				price: new Price(114.99, 4.64),
-				link: new Link("https://www.amazon.es/dp/B09NCNF2ZQ"),
+				price: new Price(181.77, 4.65),
+				link: new Link("https://www.amazon.es/dp/B0BPL9VYPW"),
 			}),
 		],
-		bestPrice: new Price(103.99, 0),
-		target: 110,
+		bestPrice: new Price(134.89, 4.65),
+		target: 140,
 	}),
 	new Component({
 		type: Type.GPU,
@@ -137,13 +127,14 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31q7quYSDvL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(1090.00, 0),
+				price: new Price(1092.00, 0),
 				link: new Link("https://shop-eu-fr.amd.com/amd-radeon-rx-7900-xtx-graphics"),
 			}),
 		],
 		bestPrice: new Price(1069.00, 0),
-		target: 1069,
+		target: 1087,
 		certainty: true,
+		buyed: true,
 	}),
 	new Component({
 		type: Type.SSD,
@@ -153,10 +144,6 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(93.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
-			}),
-			new Sell({
 				price: new Price(93.99, 4.82),
 				link: new Link("https://www.amazon.de/dp/B09F5Z6BJ6"),
 			}),
@@ -165,13 +152,18 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.es/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
-				price: new Price(112.99, 0),
+				price: new Price(110.86, 0),
+				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
+			}),
+			new Sell({
+				price: new Price(124.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ssd_puis_ref_est_in20010807.html"),
 			}),
 		],
 		bestPrice: new Price(93.99, 0),
-		target: 100,
+		target: 98.81,
 		certainty: true,
+		buyed: true,
 	}),
 	new Component({
 		type: Type.SSD,
@@ -185,11 +177,11 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
-				price: new Price(181.88, 0),
+				price: new Price(182.88, 0),
 				link: new Link("https://www.amazon.fr/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
-				price: new Price(199.00, 4.66),
+				price: new Price(189.80, 4.66),
 				link: new Link("https://www.amazon.es/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
@@ -198,79 +190,88 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(172.85, 4.66),
-		target: 180,
+		target: 177.51,
 		certainty: true,
+		buyed: true,
 	}),
 	new Component({
 		type: Type.SSD,
 		brand: Brand.SAMSUNG,
 		model: "980 500Gb M.2 NVMe",
 		description: "PCIe 3.0 • Read 3100Mb • Write 2600Mb",
-		image: "https://m.media-amazon.com/images/I/31oprRet9FL._AC_US256_.jpg",
+		image: "https://m.media-amazon.com/images/I/31XnYpheJbL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(44.29, 0),
-				link: new Link("https://www.amazon.fr/dp/B08THW4S3T"),
+				price: new Price(36.00, 4.59),
+				link: new Link("https://www.amazon.de/dp/B08THW4S3T"),
 			}),
 			new Sell({
-				price: new Price(47.09, 1.99),
-				link: new Link("https://www.amazon.de/dp/B08THW4S3T"),
+				price: new Price(43.14, 0),
+				link: new Link("https://www.amazon.fr/dp/B08THW4S3T"),
 			}),
 			new Sell({
 				price: new Price(49.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ssd_puis_ref_est_in20007749.html"),
 			}),
 			new Sell({
-				price: new Price(38.08, 12.90),
+				price: new Price(52.95, 1.50),
+				link: new Link("https://www.amazon.fr/dp/B08V7GT6F3"),
+			}),
+			new Sell({
+				price: new Price(50.00, 4.59),
 				link: new Link("https://www.amazon.es/dp/B08THW4S3T"),
 			}),
+			new Sell({
+				price: new Price(58.77, 0),
+				link: new Link("https://www.amazon.de/dp/B09G3DM8VF"),
+			}),
+			new Sell({
+				price: new Price(55.52, 12.08),
+				link: new Link("https://www.amazon.es/dp/B09G3DM8VF"),
+			}),
 		],
-		bestPrice: new Price(44.29, 0),
-		target: 50,
+		bestPrice: new Price(36.00, 4.59),
+		target: 40,
 		certainty: true,
 	}),
 	new Component({
 		type: Type.HDD,
 		brand: Brand.SEAGATE,
 		model: "Barracuda 4Tb",
-		description: "3.5\" • SATA III • 5400 RPM",
+		description: "SATA III • 5400 RPM • 3.5\"",
 		image: "https://m.media-amazon.com/images/I/41Z-sFIFVOL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(72.90, 5.40),
-				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
+				price: new Price(75.74, 5.23),
+				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
 			}),
 			new Sell({
-				price: new Price(85.30, 0),
+				price: new Price(85.20, 0),
 				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
+			}),
+			new Sell({
+				price: new Price(79.89, 5.40),
+				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
 			}),
 			new Sell({
 				price: new Price(85.30, 0),
 				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
 			}),
 			new Sell({
-				price: new Price(81.56, 5.23),
-				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
+				price: new Price(77.04, 12.56),
+				link: new Link("https://www.amazon.es/dp/B07115ZSQ6"),
 			}),
 			new Sell({
-				price: new Price(88.70, 0),
+				price: new Price(89.72, 0),
 				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
-			}),
-			new Sell({
-				price: new Price(84.02, 5.23),
-				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
-			}),
-			new Sell({
-				price: new Price(84.66, 5.22),
-				link: new Link("https://www.amazon.de/dp/B07115ZSQ6"),
 			}),
 			new Sell({
 				price: new Price(89.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
 			}),
 			new Sell({
-				price: new Price(80.11, 12.67),
-				link: new Link("https://www.amazon.es/dp/B07115ZSQ6"),
+				price: new Price(84.98, 5.22),
+				link: new Link("https://www.amazon.de/dp/B07115ZSQ6"),
 			}),
 			new Sell({
 				price: new Price(94.99, 5.40),
@@ -289,7 +290,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41UDBwjuXmL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(193.02, 6.00),
+				price: new Price(193.02, 9.90),
 				link: new Link("https://www.amazon.de/dp/B083SVLLCQ"),
 			}),
 			new Sell({
@@ -297,24 +298,24 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B078WZSN2W"),
 			}),
 			new Sell({
-				price: new Price(209.99, 0),
-				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ali_puis_ref_est_in20000189.html"),
+				price: new Price(199.14, 9.90),
+				link: new Link("https://www.amazon.fr/dp/B078WZSN2W"),
 			}),
 			new Sell({
 				price: new Price(209.99, 0),
 				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
 			}),
 			new Sell({
-				price: new Price(201.11, 9.90),
+				price: new Price(209.99, 0),
+				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ali_puis_ref_est_in20000189.html"),
+			}),
+			new Sell({
+				price: new Price(200.41, 9.90),
 				link: new Link("https://www.amazon.es/dp/B078WZSN2W"),
 			}),
 			new Sell({
-				price: new Price(201.33, 9.90),
+				price: new Price(201.53, 9.90),
 				link: new Link("https://www.amazon.es/dp/B083SVLLCQ"),
-			}),
-			new Sell({
-				price: new Price(202.17, 9.90),
-				link: new Link("https://www.amazon.fr/dp/B078WZSN2W"),
 			}),
 		],
 		bestPrice: new Price(193.02, 6.00),
@@ -329,12 +330,12 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41y8mm4LplL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(244.00, 9.90),
-				link: new Link("https://www.amazon.fr/dp/B07C46L1D8"),
+				price: new Price(243.35, 23.16),
+				link: new Link("https://www.amazon.de/dp/B07C46L1D8"),
 			}),
 			new Sell({
-				price: new Price(237.80, 19.61),
-				link: new Link("https://www.amazon.de/dp/B07C46L1D8"),
+				price: new Price(249.00, 45.52),
+				link: new Link("https://www.amazon.fr/dp/B07C46L1D8"),
 			}),
 			new Sell({
 				price: new Price(249.00, 61.29),
@@ -357,16 +358,16 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B07VV8R58C"),
 			}),
 			new Sell({
-				price: new Price(163.64, 6.84),
-				link: new Link("https://www.amazon.de/dp/B07VV8R58C"),
-			}),
-			new Sell({
 				price: new Price(184.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
 			}),
+			new Sell({
+				price: new Price(218.63, 6.84),
+				link: new Link("https://www.amazon.de/dp/B07VV8R58C"),
+			}),
 		],
 		bestPrice: new Price(162.13, 0),
-		target: 170,
+		target: 160,
 		certainty: true,
 	}),
 ]);

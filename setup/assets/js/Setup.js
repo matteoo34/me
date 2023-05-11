@@ -36,6 +36,8 @@ export class Setup {
 		for (const component of this.#components) {
 			const tr = template.content.querySelector("tr").cloneNode(true);
 
+			if (component.isBuyed()) tr.classList.add("buyed");
+
 			tr.querySelector(".type").textContent = component.getType();
 			tr.querySelector(".image img").src = component.getImage();
 			if (component.isCertain()) tr.querySelector(".model .name").append(template.content.querySelector(".certainty-badge").cloneNode());
