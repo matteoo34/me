@@ -15,11 +15,11 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31Byi3U8YDL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(425.45, 4.61),
+				price: new Price(415.45, 4.61),
 				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(439.86, 4.61),
+				price: new Price(437.99, 4.61),
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
 			}),
 			new Sell({
@@ -31,7 +31,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.es/dp/B0BCF57FL5"),
 			}),
 		],
-		bestPrice: new Price(419.89, 4.61),
+		bestPrice: new Price(415.45, 4.61),
 		target: 424.50,
 		certainty: true,
 		buyed: true,
@@ -44,15 +44,15 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Er4p78RML._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(425.12, 7.77),
+				price: new Price(427.10, 7.77),
 				link: new Link("https://www.amazon.de/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(469.00, 0),
+				price: new Price(464.31, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(474.46, 9.90),
+				price: new Price(474.51, 9.90),
 				link: new Link("https://www.amazon.es/dp/B0BH94RXPC"),
 			}),
 			new Sell({
@@ -81,7 +81,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B0BQWSP2ZP"), // XT
 			}),
 			new Sell({
-				price: new Price(334.92, 0),
+				price: new Price(340.72, 0),
 				link: new Link("https://www.amazon.fr/dp/B09HDWQKV8"), // Base
 			}),
 			new Sell({
@@ -113,15 +113,15 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0BPL9VYPW"),
 			}),
 			new Sell({
-				price: new Price(153.88, 0),
-				link: new Link("https://www.amazon.fr/dp/B0BPL9VYPW"),
-			}),
-			new Sell({
-				price: new Price(153.39, 4.64),
+				price: new Price(141.46, 4.64),
 				link: new Link("https://www.amazon.de/dp/B0BXHCNK8J"),
 			}),
 			new Sell({
-				price: new Price(181.78, 4.65),
+				price: new Price(179.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B0BPL9VYPW"),
+			}),
+			new Sell({
+				price: new Price(183.34, 4.65),
 				link: new Link("https://www.amazon.es/dp/B0BPL9VYPW"),
 			}),
 		],
@@ -137,7 +137,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31q7quYSDvL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(1096.00, 0),
+				price: new Price(1104.00, 0),
 				link: new Link("https://shop-eu-fr.amd.com/amd-radeon-rx-7900-xtx-graphics"),
 			}),
 		],
@@ -154,12 +154,12 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(93.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
+				price: new Price(96.04, 4.82),
+				link: new Link("https://www.amazon.de/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
-				price: new Price(93.99, 4.82),
-				link: new Link("https://www.amazon.de/dp/B09F5Z6BJ6"),
+				price: new Price(105.14, 0),
+				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
 				price: new Price(103.98, 4.82),
@@ -187,12 +187,12 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
-				price: new Price(183.88, 0),
-				link: new Link("https://www.amazon.fr/dp/B09F5X8ZMY"),
+				price: new Price(174.99, 4.66),
+				link: new Link("https://www.amazon.es/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
-				price: new Price(190.80, 4.66),
-				link: new Link("https://www.amazon.es/dp/B09F5X8ZMY"),
+				price: new Price(183.88, 0),
+				link: new Link("https://www.amazon.fr/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
 				price: new Price(219.99, 0),
@@ -212,16 +212,12 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31XnYpheJbL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(35.90, 4.59),
+				price: new Price(34.63, 4.59),
 				link: new Link("https://www.amazon.de/dp/B08THW4S3T"),
 			}),
 			new Sell({
-				price: new Price(42.86, 0),
+				price: new Price(43.89, 0),
 				link: new Link("https://www.amazon.fr/dp/B08THW4S3T"),
-			}),
-			new Sell({
-				price: new Price(49.99, 0),
-				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ssd_puis_ref_est_in20007749.html"),
 			}),
 			new Sell({
 				price: new Price(48.95, 4.59),
@@ -232,7 +228,11 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B08V7GT6F3"),
 			}),
 			new Sell({
-				price: new Price(52.38, 12.08),
+				price: new Price(59.99, 0),
+				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ssd_puis_ref_est_in20007749.html"),
+			}),
+			new Sell({
+				price: new Price(51.90, 12.08),
 				link: new Link("https://www.amazon.es/dp/B09G3DM8VF"),
 			}),
 		],
@@ -260,7 +260,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
 			}),
 			new Sell({
-				price: new Price(79.99, 5.40),
+				price: new Price(83.90, 5.40),
 				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
 			}),
 			new Sell({
@@ -304,7 +304,11 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B078WZSN2W"),
 			}),
 			new Sell({
-				price: new Price(199.84, 9.90),
+				price: new Price(198.98, 9.90),
+				link: new Link("https://www.amazon.es/dp/B078WZSN2W"),
+			}),
+			new Sell({
+				price: new Price(199.72, 9.90),
 				link: new Link("https://www.amazon.fr/dp/B078WZSN2W"),
 			}),
 			new Sell({
@@ -316,11 +320,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
 			}),
 			new Sell({
-				price: new Price(200.18, 9.90),
-				link: new Link("https://www.amazon.es/dp/B078WZSN2W"),
-			}),
-			new Sell({
-				price: new Price(202.04, 9.90),
+				price: new Price(201.33, 9.90),
 				link: new Link("https://www.amazon.es/dp/B083SVLLCQ"),
 			}),
 		],
@@ -360,7 +360,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/4117+8ARx3L._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(166.57, 0),
+				price: new Price(155.99, 0),
 				link: new Link("https://www.amazon.fr/dp/B07W6JPFH1"),
 			}),
 			new Sell({
