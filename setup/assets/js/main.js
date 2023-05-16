@@ -23,7 +23,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(479.90, 0),
+				price: new Price(475.58, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
 			}),
 			new Sell({
@@ -44,19 +44,19 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Er4p78RML._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(427.10, 7.77),
+				price: new Price(429.49, 7.77),
 				link: new Link("https://www.amazon.de/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(464.31, 0),
+				price: new Price(457.34, 11.66),
 				link: new Link("https://www.amazon.fr/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(474.51, 9.90),
+				price: new Price(474.50, 9.90),
 				link: new Link("https://www.amazon.es/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(509.99, 0),
+				price: new Price(499.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_cm_1700_puis_ref_est_in20014869.html"),
 			}),
 		],
@@ -81,20 +81,16 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B0BQWSP2ZP"), // XT
 			}),
 			new Sell({
-				price: new Price(340.72, 0),
-				link: new Link("https://www.amazon.fr/dp/B09HDWQKV8"), // Base
-			}),
-			new Sell({
-				price: new Price(335.00, 8.42),
+				price: new Price(334.89, 0),
 				link: new Link("https://www.amazon.de/dp/B0BQWSP2ZP"), // XT
 			}),
 			new Sell({
-				price: new Price(352.90, 8.42),
-				link: new Link("https://www.amazon.es/dp/B0BQWSP2ZP"), // XT
+				price: new Price(329.90, 11.79),
+				link: new Link("https://www.amazon.fr/dp/B09HDWQKV8"), // Base
 			}),
 			new Sell({
-				price: new Price(359.00, 34.84),
-				link: new Link("https://www.amazon.es/dp/B09HDWQKV8"), // Base
+				price: new Price(351.09, 0),
+				link: new Link("https://www.amazon.es/dp/B0BQWSP2ZP"), // XT
 			}),
 		],
 		bestPrice: new Price(299.00, 11.79),
@@ -117,7 +113,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0BXHCNK8J"),
 			}),
 			new Sell({
-				price: new Price(179.99, 0),
+				price: new Price(154.88, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BPL9VYPW"),
 			}),
 			new Sell({
@@ -137,7 +133,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31q7quYSDvL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(1104.00, 0),
+				price: new Price(1102.00, 0),
 				link: new Link("https://shop-eu-fr.amd.com/amd-radeon-rx-7900-xtx-graphics"),
 			}),
 		],
@@ -154,15 +150,15 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(96.04, 4.82),
+				price: new Price(95.99, 4.82),
 				link: new Link("https://www.amazon.de/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
-				price: new Price(105.14, 0),
+				price: new Price(102.77, 0),
 				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
-				price: new Price(103.98, 4.82),
+				price: new Price(104.25, 4.82),
 				link: new Link("https://www.amazon.es/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
@@ -183,12 +179,12 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31t-v2rIjcL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(172.85, 4.66),
-				link: new Link("https://www.amazon.de/dp/B09F5X8ZMY"),
-			}),
-			new Sell({
 				price: new Price(174.99, 4.66),
 				link: new Link("https://www.amazon.es/dp/B09F5X8ZMY"),
+			}),
+			new Sell({
+				price: new Price(175.80, 4.66),
+				link: new Link("https://www.amazon.de/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
 				price: new Price(183.88, 0),
@@ -212,10 +208,6 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31XnYpheJbL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(34.63, 4.59),
-				link: new Link("https://www.amazon.de/dp/B08THW4S3T"),
-			}),
-			new Sell({
 				price: new Price(43.89, 0),
 				link: new Link("https://www.amazon.fr/dp/B08THW4S3T"),
 			}),
@@ -232,7 +224,7 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ssd_puis_ref_est_in20007749.html"),
 			}),
 			new Sell({
-				price: new Price(51.90, 12.08),
+				price: new Price(52.14, 12.08),
 				link: new Link("https://www.amazon.es/dp/B09G3DM8VF"),
 			}),
 		],
@@ -248,7 +240,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Z-sFIFVOL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(75.74, 5.23),
+				price: new Price(75.74, 5.22),
 				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
 			}),
 			new Sell({
@@ -258,10 +250,6 @@ const setup = new Setup([
 			new Sell({
 				price: new Price(85.30, 0),
 				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
-			}),
-			new Sell({
-				price: new Price(83.90, 5.40),
-				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
 			}),
 			new Sell({
 				price: new Price(77.04, 12.56),
@@ -278,6 +266,10 @@ const setup = new Setup([
 			new Sell({
 				price: new Price(90.39, 0),
 				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
+			}),
+			new Sell({
+				price: new Price(85.09, 5.40),
+				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
 			}),
 			new Sell({
 				price: new Price(94.99, 5.40),
@@ -300,16 +292,16 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B083SVLLCQ"),
 			}),
 			new Sell({
+				price: new Price(197.24, 9.90),
+				link: new Link("https://www.amazon.fr/dp/B078WZSN2W"),
+			}),
+			new Sell({
 				price: new Price(195.40, 9.90),
 				link: new Link("https://www.amazon.de/dp/B078WZSN2W"),
 			}),
 			new Sell({
-				price: new Price(198.98, 9.90),
+				price: new Price(198.88, 9.90),
 				link: new Link("https://www.amazon.es/dp/B078WZSN2W"),
-			}),
-			new Sell({
-				price: new Price(199.72, 9.90),
-				link: new Link("https://www.amazon.fr/dp/B078WZSN2W"),
 			}),
 			new Sell({
 				price: new Price(209.99, 0),
@@ -320,7 +312,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
 			}),
 			new Sell({
-				price: new Price(201.33, 9.90),
+				price: new Price(202.34, 9.90),
 				link: new Link("https://www.amazon.es/dp/B083SVLLCQ"),
 			}),
 		],
@@ -336,7 +328,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41y8mm4LplL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(243.35, 23.16),
+				price: new Price(269.53, 19.61),
 				link: new Link("https://www.amazon.de/dp/B07C46L1D8"),
 			}),
 			new Sell({
@@ -360,12 +352,16 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/4117+8ARx3L._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(155.99, 0),
+				price: new Price(165.99, 0),
 				link: new Link("https://www.amazon.fr/dp/B07W6JPFH1"),
 			}),
 			new Sell({
 				price: new Price(184.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
+			}),
+			new Sell({
+				price: new Price(209.54, 0),
+				link: new Link("https://www.amazon.de/-/en/Logitech-LIGHTSPEED-Mechanical-LIGHTSYNC-Bluetooth/dp/B07W6JPFH1"),
 			}),
 		],
 		bestPrice: new Price(155.99, 0),
