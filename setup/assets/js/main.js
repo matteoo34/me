@@ -23,7 +23,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(467.75, 0),
+				price: new Price(475.84, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
 			}),
 			new Sell({
@@ -48,7 +48,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(469.00, 0),
+				price: new Price(459.90, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BH94RXPC"),
 			}),
 			new Sell({
@@ -81,11 +81,11 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_reliq_puis_ref_est_in20011451.html"),
 			}),
 			new Sell({
-				price: new Price(336.94, 0),
+				price: new Price(326.70, 9.95),
 				link: new Link("https://www.amazon.de/dp/B0BQWSP2ZP"),
 			}),
 			new Sell({
-				price: new Price(340.50, 0),
+				price: new Price(340.57, 0),
 				link: new Link("https://www.amazon.fr/dp/B09HDWQKV8/?smid=ATQZ2A1KZQ0X2&tag=idealocom-mp-21&linkCode=asn&creative=6742&camp=1638&creativeASIN=B09HDWQKV8&ascsubtag=2023-05-20_41c424174a5a05774ff8a404037a656e18f0f0c5b3767dfd7a6b5a691505072e&th=1&psc=1"),
 			}),
 			new Sell({
@@ -93,7 +93,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B09HDWQKV8"),
 			}),
 			new Sell({
-				price: new Price(352.70, 0),
+				price: new Price(351.45, 0),
 				link: new Link("https://www.amazon.es/dp/B0BQWSP2ZP"),
 			}),
 			new Sell({
@@ -156,7 +156,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
-				price: new Price(102.77, 0),
+				price: new Price(102.15, 0),
 				link: new Link("https://www.amazon.fr/dp/B09F5Z6BJ6"),
 			}),
 			new Sell({
@@ -205,33 +205,43 @@ const setup = new Setup([
 	new Component({
 		type: Type.SSD,
 		brand: Brand.SAMSUNG,
-		model: "980 500Gb M.2 NVMe",
-		description: "PCIe 3.0 • Read 3100Mb • Write 2600Mb",
+		model: "980 1Tb M.2 NVMe",
+		description: "PCIe 3.0 • Read 3500Mb • Write 3000Mb",
 		image: "https://m.media-amazon.com/images/I/31XnYpheJbL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(43.19, 0),
-				link: new Link("https://www.amazon.fr/dp/B08THW4S3T"),
+				price: new Price(44.99, 4.56),
+				link: new Link("https://www.amazon.de/dp/B08TJ2649W"),
 			}),
 			new Sell({
-				price: new Price(41.00, 4.59),
-				link: new Link("https://www.amazon.de/dp/B08THW4S3T"),
+				price: new Price(52.28, 12.08),
+				link: new Link("https://www.amazon.es/dp/B09G3DM8VF"),
 			}),
 			new Sell({
-				price: new Price(44.94, 4.59),
-				link: new Link("https://www.amazon.es/dp/B08THW4S3T"),
+				price: new Price(66.60, 0),
+				link: new Link("https://www.amazon.fr/dp/B08TJ2649W"),
 			}),
 			new Sell({
-				price: new Price(52.95, 1.50),
-				link: new Link("https://www.amazon.fr/dp/B08V7GT6F3"),
+				price: new Price(66.60, 4.56),
+				link: new Link("https://www.amazon.es/dp/B08TJ2649W"),
 			}),
 			new Sell({
-				price: new Price(59.99, 0),
-				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ssd_puis_ref_est_in20007749.html"),
+				price: new Price(74.99, 0),
+				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ssd_puis_ref_est_in20007748.html"),
+			}),
+			new Sell({
+				price: new Price(78.00, 4.61),
+				link: new Link("https://www.amazon.de/dp/B08V7GT6F3"),
+			}),
+			new Sell({
+				price: new Price(86.12, 4.61),
+				link: new Link("https://www.amazon.es/dp/B08V7GT6F3"),
 			}),
 		],
-		bestPrice: new Price(35.90, 4.59),
+		bestPrice: new Price(44.99, 4.56),
+		target: 49.55,
 		certainty: true,
+		buyed: true,
 	}),
 	new Component({
 		type: Type.HDD,
@@ -253,15 +263,11 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
 			}),
 			new Sell({
-				price: new Price(86.91, 0),
+				price: new Price(86.36, 0),
 				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
 			}),
 			new Sell({
-				price: new Price(84.02, 5.28),
-				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
-			}),
-			new Sell({
-				price: new Price(78.19, 11.51),
+				price: new Price(78.64, 11.51),
 				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
 			}),
 			new Sell({
@@ -273,6 +279,10 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.es/dp/B07115ZSQ6"),
 			}),
 			new Sell({
+				price: new Price(85.71, 5.28),
+				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
+			}),
+			new Sell({
 				price: new Price(86.92, 5.22),
 				link: new Link("https://www.amazon.de/dp/B07115ZSQ6"),
 			}),
@@ -281,8 +291,10 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.es/dp/B07D9C7SQH"),
 			}),
 		],
-		bestPrice: new Price(72.90, 5.40),
+		bestPrice: new Price(70.40, 5.40),
+		target: 75.80,
 		certainty: true,
+		buyed: true,
 	}),
 	new Component({
 		type: Type.PSU,
@@ -312,7 +324,7 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ali_puis_ref_est_in20000189.html"),
 			}),
 			new Sell({
-				price: new Price(200.41, 9.90),
+				price: new Price(202.01, 9.90),
 				link: new Link("https://www.amazon.es/dp/B078WZSN2W"),
 			}),
 		],
@@ -352,12 +364,12 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/4117+8ARx3L._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(164.66, 0),
-				link: new Link("https://www.amazon.fr/dp/B07W8NTYNY"),
+				price: new Price(155.99, 0),
+				link: new Link("https://www.amazon.fr/dp/B07W6JPFH1"),
 			}),
 			new Sell({
-				price: new Price(165.99, 0),
-				link: new Link("https://www.amazon.fr/dp/B07W6JPFH1"),
+				price: new Price(163.80, 0),
+				link: new Link("https://www.amazon.fr/dp/B07W8NTYNY"),
 			}),
 			new Sell({
 				price: new Price(168.61, 6.90),
@@ -368,7 +380,7 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
 			}),
 			new Sell({
-				price: new Price(200.12, 0),
+				price: new Price(189.66, 6.90),
 				link: new Link("https://www.amazon.de/dp/B07W6JPFH1"),
 			}),
 		],
