@@ -85,7 +85,7 @@ export class Setup {
 			if (target !== 0) {
 				tr.querySelector(".summary .target").textContent = `Target: ${target.toFixed(2)}€`;
 
-				if (component.getBestSell().getPrice().getTotalAmount().toFixed(2) <= target) tr.querySelector(".summary .target").classList.add("reached");
+				if (component.getBestSell().getPrice().getTotalAmount().toFixed(2) >= target) tr.querySelector(".summary .target").classList.add("reached");
 			}
 
 			totalPrice.setAmount(totalPrice.getAmount() + bestSell.getPrice().getAmount());

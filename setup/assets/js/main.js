@@ -19,16 +19,20 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.es/dp/B0BG6843GX"),
 			}),
 			new Sell({
-				price: new Price(425.47, 4.61),
+				price: new Price(433.25, 4.61),
 				link: new Link("https://www.amazon.de/dp/B0BG6843GX"),
+			}),
+			new Sell({
+				price: new Price(473.20, 0),
+				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
 			}),
 			new Sell({
 				price: new Price(463.95, 9.90),
 				link: new Link("https://www.amazon.fr/dp/B0BS9CXQZQ"),
 			}),
 			new Sell({
-				price: new Price(479.39, 0),
-				link: new Link("https://www.amazon.fr/dp/B0BG6843GX"),
+				price: new Price(509.99, 0),
+				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wpr_puis_ref_est_in20014981.html"),
 			}),
 		],
 		bestPrice: new Price(407.99, 4.61),
@@ -44,20 +48,24 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Er4p78RML._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(428.88, 7.77),
+				price: new Price(420.65, 10.80),
+				link: new Link("https://www.amazon.de/dp/B0BH94RXPC/?smid=A2NVH5TXDWZ5IT&tag=idealode-mp-pk-21&linkCode=asn&creative=6742&camp=1638&creativeASIN=B0BH94RXPC&ascsubtag=2023-06-05_a4f15525228d5f06a4d8c2ed39ca42c7593769b361a2b103a6a0dbdaf5f51406&th=1&psc=1"),
+			}),
+			new Sell({
+				price: new Price(429.19, 7.77),
 				link: new Link("https://www.amazon.de/dp/B0BH94RXPC"),
 			}),
 			new Sell({
-				price: new Price(452.77, 9.90),
+				price: new Price(469.00, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BH94RXPC"),
-			}),
-			new Sell({
-				price: new Price(456.55, 9.90),
-				link: new Link("https://www.amazon.es/dp/B0BH94RXPC"),
 			}),
 			new Sell({
 				price: new Price(499.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_cm_1700_puis_ref_est_in20014869.html"),
+			}),
+			new Sell({
+				price: new Price(494.60, 7.77),
+				link: new Link("https://www.amazon.es/dp/B0BH94RXPC"),
 			}),
 		],
 		bestPrice: new Price(387.90, 7.77),
@@ -68,17 +76,13 @@ const setup = new Setup([
 	new Component({
 		type: Type.WATERCOOLING,
 		brand: Brand.CORSAIR,
-		model: "iCUE H150i ELITE LCD (Base/XT)",
+		model: "iCUE H150i ELITE LCD XT",
 		description: "360mm • 3x120mm • LGA 1700",
 		image: "https://m.media-amazon.com/images/I/31T3BaaHbFL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(325.00, 0),
+				price: new Price(324.99, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BQWSP2ZP"),
-			}),
-			new Sell({
-				price: new Price(342.91, 0),
-				link: new Link("https://www.amazon.fr/dp/B09HDWQKV8"),
 			}),
 			new Sell({
 				price: new Price(335.00, 8.42),
@@ -93,8 +97,10 @@ const setup = new Setup([
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_reliq_puis_ref_est_in20017097.html"),
 			}),
 		],
-		bestPrice: new Price(325.00, 0),
+		bestPrice: new Price(324.99, 0),
+		target: 324.99,
 		certainty: true,
+		buyed: true,
 	}),
 	new Component({
 		type: Type.RAM,
@@ -108,7 +114,7 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B0BPL9VYPW"),
 			}),
 			new Sell({
-				price: new Price(149.99, 0),
+				price: new Price(151.88, 0),
 				link: new Link("https://www.amazon.fr/dp/B0BPL9VYPW"),
 			}),
 			new Sell({
@@ -129,7 +135,7 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/31q7quYSDvL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(1122.00, 0),
+				price: new Price(1123.00, 0),
 				link: new Link("https://shop-eu-fr.amd.com/amd-radeon-rx-7900-xtx-graphics"),
 			}),
 		],
@@ -187,12 +193,12 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.es/dp/B09F5X8ZMY"),
 			}),
 			new Sell({
-				price: new Price(183.88, 0),
+				price: new Price(182.88, 0),
 				link: new Link("https://www.amazon.fr/dp/B09F5X8ZMY"),
 			}),
 		],
 		bestPrice: new Price(149.99, 0),
-		target: 177.51,
+		target: 149.99,
 		certainty: true,
 		buyed: true,
 	}),
@@ -208,11 +214,11 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.de/dp/B08TJ2649W"),
 			}),
 			new Sell({
-				price: new Price(61.02, 0),
+				price: new Price(57.37, 0),
 				link: new Link("https://www.amazon.fr/dp/B08TJ2649W"),
 			}),
 			new Sell({
-				price: new Price(65.84, 4.61),
+				price: new Price(65.20, 4.61),
 				link: new Link("https://www.amazon.es/dp/B08TJ2649W"),
 			}),
 			new Sell({
@@ -233,36 +239,36 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41Z-sFIFVOL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(72.90, 5.40),
-				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
+				price: new Price(73.50, 5.23),
+				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
 			}),
 			new Sell({
-				price: new Price(79.69, 5.23),
-				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
-			}),
-			new Sell({
-				price: new Price(85.20, 0),
+				price: new Price(85.30, 0),
 				link: new Link("https://www.amazon.fr/dp/B0713R3Y6F"),
 			}),
 			new Sell({
-				price: new Price(81.00, 5.23),
-				link: new Link("https://www.amazon.es/dp/B0713R3Y6F"),
+				price: new Price(80.35, 5.23),
+				link: new Link("https://www.amazon.de/dp/B0713R3Y6F"),
 			}),
 			new Sell({
 				price: new Price(80.99, 6.00),
 				link: new Link("https://www.amazon.de/dp/B07115ZSQ6"),
 			}),
 			new Sell({
+				price: new Price(76.55, 11.51),
+				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
+			}),
+			new Sell({
 				price: new Price(77.04, 12.56),
 				link: new Link("https://www.amazon.es/dp/B07115ZSQ6"),
 			}),
 			new Sell({
-				price: new Price(78.22, 11.51),
-				link: new Link("https://www.amazon.fr/dp/B07115ZSQ6"),
-			}),
-			new Sell({
 				price: new Price(89.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wdi_sata_puis_ref_est_in10106812.html"),
+			}),
+			new Sell({
+				price: new Price(84.99, 5.40),
+				link: new Link("https://www.amazon.de/dp/B07D9C7SQH"),
 			}),
 			new Sell({
 				price: new Price(92.99, 0),
@@ -286,19 +292,15 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B083SVLLCQ"),
 			}),
 			new Sell({
-				price: new Price(209.99, 0),
-				link: new Link("https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_w_ali_puis_ref_est_in20000189.html"),
-			}),
-			new Sell({
-				price: new Price(200.67, 9.90),
+				price: new Price(199.29, 9.90),
 				link: new Link("https://www.amazon.es/dp/B078WZSN2W"),
 			}),
 			new Sell({
-				price: new Price(214.05, 6.00),
+				price: new Price(207.31, 16.91),
 				link: new Link("https://www.amazon.de/dp/B083SVLLCQ"),
 			}),
 			new Sell({
-				price: new Price(219.14, 9.66),
+				price: new Price(219.90, 9.66),
 				link: new Link("https://www.amazon.es/dp/B083SVLLCQ"),
 			}),
 		],
@@ -338,20 +340,20 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/4117+8ARx3L._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(163.80, 0),
+				price: new Price(163.74, 0),
 				link: new Link("https://www.amazon.fr/dp/B07W8NTYNY"),
 			}),
 			new Sell({
-				price: new Price(168.61, 6.90),
-				link: new Link("https://www.amazon.es/dp/B07W6JPFH1"),
+				price: new Price(172.84, 0),
+				link: new Link("https://www.amazon.fr/dp/B07W6JPFH1"),
 			}),
 			new Sell({
 				price: new Price(184.99, 0),
 				link: new Link("https://www.topachat.com/pages/detail2_cat_est_gaming_puis_rubrique_est_wg_pccla_puis_ref_est_in20000200.html"),
 			}),
 			new Sell({
-				price: new Price(194.43, 0),
-				link: new Link("https://www.amazon.fr/dp/B07W6JPFH1"),
+				price: new Price(183.67, 6.90),
+				link: new Link("https://www.amazon.es/dp/B07W6JPFH1"),
 			}),
 			new Sell({
 				price: new Price(219.76, 6.90),
