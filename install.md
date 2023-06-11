@@ -30,6 +30,7 @@
 1. Yarn (`npm i -g yarn`)
 1. Maildev (`npm i -g maildev`)
 1. [Insomnia](https://insomnia.rest/download)
+1. [FileZilla](https://filezilla-project.org/download.php?type=client)
 1. [JDK 20](https://www.oracle.com/fr/java/technologies/downloads)
 1. [MinGW](https://sourceforge.net/projects/mingw) (gcc & g++)
 1. [Emscripten SDK](https://emscripten.org/docs/getting_started/downloads.html)

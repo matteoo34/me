@@ -275,8 +275,8 @@ const setup = new Setup([
 				link: new Link("https://www.amazon.fr/dp/B07D9C7SQH"),
 			}),
 		],
-		bestPrice: new Price(70.40, 5.40),
-		target: 75.80,
+		bestPrice: new Price(70.29, 5.40),
+		target: 75.69,
 		certainty: true,
 		buyed: true,
 	}),
@@ -317,12 +317,12 @@ const setup = new Setup([
 		image: "https://m.media-amazon.com/images/I/41y8mm4LplL._AC_US256_.jpg",
 		sells: [
 			new Sell({
-				price: new Price(269.53, 19.61),
-				link: new Link("https://www.amazon.de/dp/B07C46L1D8"),
+				price: new Price(268.85, 14.87),
+				link: new Link("https://www.amazon.fr/dp/B07C46L1D8"),
 			}),
 			new Sell({
-				price: new Price(249.00, 45.52),
-				link: new Link("https://www.amazon.fr/dp/B07C46L1D8"),
+				price: new Price(269.53, 19.61),
+				link: new Link("https://www.amazon.de/dp/B07C46L1D8"),
 			}),
 			new Sell({
 				price: new Price(249.00, 61.29),
@@ -330,7 +330,9 @@ const setup = new Setup([
 			}),
 		],
 		bestPrice: new Price(216.41, 19.61),
+		target: 283.73,
 		certainty: true,
+		buyed: true,
 	}),
 	new Component({
 		type: Type.KEYBOARD,
