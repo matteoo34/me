@@ -60,12 +60,12 @@ h2 {
 	letter-spacing: -.5px;
 }
 
-ul {
+ul.projectList {
 	list-style-type: none;
 	margin-bottom: 30px;
 	padding: 0 10px;
 }
-ul:last-of-type {margin-bottom: 0}
+ul.projectList:last-of-type {margin-bottom: 0}
 
 a {
 	display: inline-flex;
