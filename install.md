@@ -89,8 +89,3 @@
 1. vscode-pdf
 1. SVG
 1. Better Comment
-
-## Todo
-
-- PHP 7.4 (Windows): open C:/laragon/php/php7.4.33-Win32-vc15-x64/php.ini, search for "sodium" and uncomment the line
-- Redeem AMD code for TLOU
