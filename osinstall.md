@@ -1,8 +1,3 @@
-# Windows 11 Home
-
-- Get full perms on account
-- Add Git Bash profile to Terminal
-
 ## Apps
 
 ### Miscellaneous

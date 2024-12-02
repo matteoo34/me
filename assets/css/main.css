@@ -1,107 +1,44 @@
-/* Font import */
+@import url("header.css");
+@import url("section.css");
 
 @font-face {
-	font-family: "Circular Std Black";
-	src: url("../fonts/CircularStdBlack.woff") format("woff");
+	font-family: "PPRadioGrotesk-Black";
+	font-weight: 900;
+	src: url("../fonts/PPRadioGrotesk-Black.otf");
 }
 
 @font-face {
-	font-family: "Circular Std Medium";
-	src: url("../fonts/CircularStdMedium.woff") format("woff");
+	font-family: "PPRadioGrotesk-Regular";
+	font-weight: 400;
+	src: url("../fonts/PPRadioGrotesk-Regular.otf");
 }
-
-/* Text selection color */
-::-moz-selection {background-color: rgba(0, 0, 0, .2)}
-::selection {background-color: rgba(0, 0, 0, .2)}
 
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	margin: 0;
-	background-color: #ddd;
-	font-family: "Circular Std Medium";
+	margin: 16px;
+	font-family: "PPRadioGrotesk-Regular";
 }
 
-header {
-	padding: 10px 20px;
-	top: 0;
-	position: sticky;
-	background-color: #7411f6;
-	color: #fff;
-	font-size: 20px;
-	z-index: 1;
-}
-
-header span {padding: 0 10px}
-
-.container {
-	flex-grow: 1;
-	width: 65vw;
+article {
+	max-width: 21cm;
 	margin: 0 auto;
-	padding: 10px 20px 20px 20px;
-	background-color: #fff;
 }
 
-/* Current project container */
-.current {
-	margin-bottom: 30px;
-	padding: 20px 20px 10px 20px;
-	border-left: 5px solid #ffa406;
-	border-radius: 5px;
-	background-color: #fedb9b;
+ul.project-list {
+	color: #757575;
 }
 
-.current h4 {color: #ffa406}
-
-h2 {
-	font-weight: normal;
-	font-family: "Circular Std Black";
-	letter-spacing: -.5px;
+ul li {
+	padding: 2px 0;
 }
-
-ul.projectList {
-	list-style-type: none;
-	margin-bottom: 30px;
-	padding: 0 10px;
-}
-ul.projectList:last-of-type {margin-bottom: 0}
 
 a {
-	display: inline-flex;
-	align-items: center;
-	margin: 2px 4px;
-	opacity: .75;
-	color: #000 !important;
+	opacity: 0.75;
+	color: #000000;
 	text-decoration: none;
-	transition-duration: .2s;
+	transition-duration: 0.2s;
 }
+
 a:hover {
 	opacity: 1;
 	text-decoration: underline;
-}
-
-a ion-icon {
-	min-width: 24px;
-	margin-right: 6px;
-	color: #000;
-	font-size: 20px;
-}
-
-/* CV download */
-.cv {
-	margin-top: 40px;
-	padding: 5px 10px;
-	border: none;
-	border-radius: 6px;
-	background-color: transparent;
-	text-decoration: none !important;
-	transition-duration: .2s;
-}
-.cv:hover {background-color: #ddd}
-.cv:active {
-	background-color: #ccc;
-	-webkit-transform: scale(.9);
-	transform: scale(.9);
-	transition-duration: .1s;
 }

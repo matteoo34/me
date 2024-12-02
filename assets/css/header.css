@@ -1,0 +1,14 @@
+header {
+	/* background: orange; */
+}
+
+header small {
+	font-family: "PPRadioGrotesk-Black";
+	font-size: 1.25rem;
+}
+
+header h1 {
+	margin-top: 0;
+	font-family: "PPRadioGrotesk-Black";
+	font-size: 3rem;
+}
