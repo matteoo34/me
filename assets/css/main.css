@@ -1,15 +1,16 @@
+@import url("experience.css");
 @import url("header.css");
 @import url("section.css");
 
 @font-face {
 	font-family: "PPRadioGrotesk-Black";
-	font-weight: 900;
+	font-weight: bold;
 	src: url("../fonts/PPRadioGrotesk-Black.otf");
 }
 
 @font-face {
 	font-family: "PPRadioGrotesk-Regular";
-	font-weight: 400;
+	font-weight: normal;
 	src: url("../fonts/PPRadioGrotesk-Regular.otf");
 }
 
