@@ -634,7 +634,7 @@
 				},
 				{
 					"name": "Project A",
-					"description": "Moteur de jeu en cours de développement",
+					"description": "Moteur de jeu (en cours de développement)",
 					"categoryIds": [13],
 					"technologyIds": [26, 27, 28]
 				}
@@ -678,7 +678,7 @@
 				},
 				{
 					"name": "Project B",
-					"description": "Jeu en cours de développement",
+					"description": "Jeu (en cours de développement)",
 					"categoryIds": [11],
 					"technologyIds": [26]
 				}
