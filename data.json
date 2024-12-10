@@ -1,62 +1,4 @@
 {
-	"categories": [
-		{
-			"id": 0,
-			"name": "Android"
-		},
-		{
-			"id": 1,
-			"name": "iOS"
-		},
-		{
-			"id": 2,
-			"name": "Web"
-		},
-		{
-			"id": 3,
-			"name": "Front-office"
-		},
-		{
-			"id": 4,
-			"name": "Back-office"
-		},
-		{
-			"id": 5,
-			"name": "Site vitrine"
-		},
-		{
-			"id": 6,
-			"name": "E-commerce"
-		},
-		{
-			"id": 7,
-			"name": "SPA"
-		},
-		{
-			"id": 8,
-			"name": "API"
-		},
-		{
-			"id": 9,
-			"name": "Librairie"
-		},
-		{
-			"id": 10,
-			"name": "Démo"
-		},
-		{
-			"id": 11,
-			"name": "Jeu"
-		},
-		{
-			"id": 12,
-			"name": "Mod"
-		},
-		{
-			"id": 13,
-			"name": "Framework"
-		}
-	],
 	"technologies": [
 		{
 			"id": 0,
@@ -202,6 +144,273 @@
 			"id": 28,
 			"name": "Vulkan",
 			"iconSrc": "assets/images/vulkan.png"
+		},
+		{
+			"id": 29,
+			"name": "WebGPU",
+			"iconSrc": "assets/images/webgpu.svg"
+		},
+		{
+			"id": 30,
+			"name": "MySQL",
+			"iconSrc": "assets/images/mysql.svg"
+		},
+		{
+			"id": 31,
+			"name": "Dart",
+			"iconSrc": "assets/images/dart.svg"
+		},
+		{
+			"id": 32,
+			"name": "Git",
+			"iconSrc": "assets/images/git.svg"
+		},
+		{
+			"id": 33,
+			"name": "GitHub",
+			"iconSrc": "assets/images/github.svg"
+		},
+		{
+			"id": 34,
+			"name": "Visual Studio Code",
+			"iconSrc": "assets/images/visualstudiocode.svg"
+		},
+		{
+			"id": 35,
+			"name": "Visual Studio",
+			"iconSrc": "assets/images/visualstudio.svg"
+		},
+		{
+			"id": 36,
+			"name": "Sublime Text",
+			"iconSrc": "assets/images/sublimetext.svg"
+		},
+		{
+			"id": 37,
+			"name": "XCode",
+			"iconSrc": "assets/images/xcode.svg"
+		},
+		{
+			"id": 38,
+			"name": "Windows",
+			"iconSrc": "assets/images/windows.svg"
+		},
+		{
+			"id": 39,
+			"name": "Mac",
+			"iconSrc": "assets/images/apple.svg"
+		},
+		{
+			"id": 40,
+			"name": "Linux",
+			"iconSrc": "assets/images/linux.svg"
+		},
+		{
+			"id": 41,
+			"name": "Ubuntu",
+			"iconSrc": "assets/images/ubuntu.svg"
+		},
+		{
+			"id": 42,
+			"name": "Doctrine",
+			"iconSrc": "assets/images/doctrine.svg"
+		},
+		{
+			"id": 43,
+			"name": "Hibernate",
+			"iconSrc": "assets/images/hibernate.svg"
+		},
+		{
+			"id": 44,
+			"name": "Composer",
+			"iconSrc": "assets/images/composer.svg"
+		}
+	],
+	"skillCategories": [
+		{
+			"name": "Langages, frameworks et APIs",
+			"skills": [
+				{
+					"technologyId": 20
+				},
+				{
+					"technologyId": 12,
+					"skills": [
+						{
+							"technologyId": 14,
+							"skills": [
+								{
+									"technologyId": 1
+								}
+							]
+						},
+						{
+							"technologyId": 8
+						},
+						{
+							"technologyId": 22
+						},
+						{
+							"technologyId": 29
+						}
+					]
+				},
+				{
+					"technologyId": 13,
+					"skills": [
+						{
+							"technologyId": 0,
+							"skills": [
+								{
+									"technologyId": 44
+								},
+								{
+									"technologyId": 42
+								}
+							]
+						}
+					]
+				},
+				{
+					"technologyId": 30
+				},
+				{
+					"technologyId": 31,
+					"skills": [
+						{
+							"technologyId": 2,
+							"skills": [
+								{
+									"technologyId": 25
+								}
+							]
+						}
+					]
+				},
+				{
+					"technologyId": 24,
+					"skills": [
+						{
+							"technologyId": 7,
+							"skills": [
+								{
+									"technologyId": 43
+								}
+							]
+						}
+					]
+				},
+				{
+					"technologyId": 26
+				}
+			]
+		},
+		{
+			"name": "VCS",
+			"skills": [
+				{
+					"technologyId": 32,
+					"skills": [
+						{
+							"technologyId": 33
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "IDEs",
+			"skills": [
+				{
+					"technologyId": 34
+				},
+				{
+					"technologyId": 35
+				},
+				{
+					"technologyId": 36
+				},
+				{
+					"technologyId": 37
+				}
+			]
+		},
+		{
+			"name": "Plateformes",
+			"skills": [
+				{
+					"technologyId": 38
+				},
+				{
+					"technologyId": 39
+				},
+				{
+					"technologyId": 40,
+					"skills": [
+						{
+							"technologyId": 41
+						}
+					]
+				}
+			]
+		}
+	],
+	"projectCategories": [
+		{
+			"id": 0,
+			"name": "Android"
+		},
+		{
+			"id": 1,
+			"name": "iOS"
+		},
+		{
+			"id": 2,
+			"name": "Web"
+		},
+		{
+			"id": 3,
+			"name": "Front-office"
+		},
+		{
+			"id": 4,
+			"name": "Back-office"
+		},
+		{
+			"id": 5,
+			"name": "Site vitrine"
+		},
+		{
+			"id": 6,
+			"name": "E-commerce"
+		},
+		{
+			"id": 7,
+			"name": "SPA"
+		},
+		{
+			"id": 8,
+			"name": "API"
+		},
+		{
+			"id": 9,
+			"name": "Librairie"
+		},
+		{
+			"id": 10,
+			"name": "Démo"
+		},
+		{
+			"id": 11,
+			"name": "Jeu"
+		},
+		{
+			"id": 12,
+			"name": "Mod"
+		},
+		{
+			"id": 13,
+			"name": "Framework"
 		}
 	],
 	"professionalExperiences": [

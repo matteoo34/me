@@ -2,16 +2,11 @@ export {};
 
 /**
  * @typedef {Object} Data
- * @property {Category[]} categories
  * @property {Technology[]} technologies
+ * @property {SkillCategory[]} skillCategories
+ * @property {ProjectCategory[]} projectCategories
  * @property {Experience[]} professionalExperiences
  * @property {Experience[]} personalExperiences
- */
-
-/**
- * @typedef {Object} Category
- * @property {Number} id
- * @property {String} name
  */
 
 /**
@@ -19,6 +14,24 @@ export {};
  * @property {Number} id
  * @property {String} name
  * @property {String} iconSrc
+ */
+
+/**
+ * @typedef {Object} SkillCategory
+ * @property {String} name
+ * @property {Skill[]} skills
+ */
+
+/**
+ * @typedef {Object} Skill
+ * @property {Number} technologyId
+ * @property {Skill[]} [skills]
+ */
+
+/**
+ * @typedef {Object} ProjectCategory
+ * @property {Number} id
+ * @property {String} name
  */
 
 /**
@@ -46,7 +59,12 @@ const data = await (await fetch("data.json")).json();
 /**
  * @type {HTMLTemplateElement}
  */
-const template = document.body.querySelector("#project-template");
+const template = document.body.querySelector("#data-template");
+
+/**
+ * @type {HTMLDivElement}
+ */
+const skillCategoryListPlaceholder = document.body.querySelector("#skill-category-list-placeholder");
 
 /**
  * @type {HTMLDivElement}
@@ -57,6 +75,19 @@ const professionalExperiencePlaceholder = document.body.querySelector("#professi
  * @type {HTMLDivElement}
  */
 const personalExperiencePlaceholder = document.body.querySelector("#personal-experience-placeholder");
+
+// Skills
+{
+	const skillCategoryListFragment = document.createDocumentFragment();
+
+	for (const skillCategory of data.skillCategories) {
+		const skillCategoryElement = getSkillCategoryElement(skillCategory);
+
+		skillCategoryListFragment.appendChild(skillCategoryElement);
+	}
+
+	skillCategoryListPlaceholder.replaceWith(skillCategoryListFragment);
+}
 
 // Professional experiences
 {
@@ -82,6 +113,89 @@ const personalExperiencePlaceholder = document.body.querySelector("#personal-exp
 	}
 
 	personalExperiencePlaceholder.replaceWith(personalExperienceFragment);
+}
+
+/**
+ * @param {SkillCategory} skillCategory
+ */
+function getSkillCategoryElement(skillCategory) {
+	/**
+	 * @type {HTMLElement}
+	 */
+	// @ts-ignore
+	const skillCategoryContainerElement = template.content.querySelector(".skill-category-container").cloneNode(true);
+
+	/**
+	 * @type {HTMLHeadingElement}
+	 */
+	const skillCategoryNameElement = skillCategoryContainerElement.querySelector(".skill-category-name");
+
+	/**
+	 * @type {HTMLUListElement}
+	 */
+	const skillListElement = skillCategoryContainerElement.querySelector(".skill-list");
+
+	skillCategoryNameElement.textContent = skillCategory.name;
+
+	for (const skill of skillCategory.skills) {
+		const skillListItemElement = getSkillListItemElement(skill);
+
+		skillListElement.appendChild(skillListItemElement);
+	}
+
+	return skillCategoryContainerElement;
+}
+
+/**
+ * @param {Skill} skill
+ */
+function getSkillListItemElement(skill) {
+	const technology = data.technologies[skill.technologyId];
+	const skills = skill.skills;
+
+	/**
+	 * @type {HTMLLIElement}
+	 */
+	// @ts-ignore
+	const skillListItemElement = template.content.querySelector(".skill-list-item").cloneNode(true);
+
+	/**
+	 * @type {HTMLDivElement}
+	 */
+	const skillTechnologyContainerElement = skillListItemElement.querySelector(".skill-technology-container");
+
+	/**
+	 * @type {HTMLImageElement}
+	 */
+	const technologyIconElement = skillTechnologyContainerElement.querySelector(".technology-icon");
+
+	/**
+	 * @type {HTMLSpanElement}
+	 */
+	const technologyNameElement = skillTechnologyContainerElement.querySelector(".technology-name");
+
+	/**
+	 * @type {HTMLUListElement}
+	 */
+	const skillListElement = skillListItemElement.querySelector(".skill-list");
+
+	technologyIconElement.src = technology.iconSrc;
+	technologyIconElement.alt = technology.name;
+
+	technologyNameElement.textContent = technology.name;
+
+	if (skills) {
+		for (const skill of skills) {
+			const skillListItemElement = getSkillListItemElement(skill);
+
+			skillListElement.appendChild(skillListItemElement);
+		}
+	}
+	else {
+		skillListElement.remove();
+	}
+
+	return skillListItemElement;
 }
 
 /**
@@ -151,22 +265,22 @@ function getExperienceElement(experience) {
 		const projectTechnologyListElement = projectListItemElement.querySelector(".project-technology-list");
 
 		for (const categoryId of project.categoryIds) {
-			const category = data.categories[categoryId];
+			const projectCategory = data.projectCategories[categoryId];
 
 			/**
 			 * @type {HTMLLIElement}
 			 */
 			// @ts-ignore
-			const categoryListItem = template.content.querySelector(".category-list-item").cloneNode(true);
+			const projectCategoryListItem = template.content.querySelector(".project-category-list-item").cloneNode(true);
 
 			/**
 			 * @type {HTMLSpanElement}
 			 */
-			const categoryNameElement = categoryListItem.querySelector(".category-name");
+			const projectCategoryNameElement = projectCategoryListItem.querySelector(".project-category-name");
 
-			categoryNameElement.textContent = category.name;
+			projectCategoryNameElement.textContent = projectCategory.name;
 
-			projectCategoryListItemElement.appendChild(categoryListItem);
+			projectCategoryListItemElement.appendChild(projectCategoryListItem);
 		}
 
 		if (project.url) {

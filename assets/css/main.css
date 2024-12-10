@@ -1,6 +1,7 @@
 @import url("experience.css");
 @import url("header.css");
-@import url("section.css");
+@import url("skill.css");
+@import url("technology.css");
 
 @font-face {
 	font-family: "PPRadioGrotesk-Black";
@@ -19,17 +20,19 @@ body {
 	font-family: "PPRadioGrotesk-Regular";
 }
 
-article {
+.article {
 	max-width: 21cm;
 	margin: 0 auto;
 }
 
-ul.project-list {
-	color: #757575;
+h1 {
+	font-family: "PPRadioGrotesk-Black";
+	font-size: 1.5rem;
 }
 
-ul li {
-	padding: 2px 0;
+h2 {
+	font-family: "PPRadioGrotesk-Black";
+	font-size: 1.25rem;
 }
 
 a {

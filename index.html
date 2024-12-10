@@ -1,126 +1,39 @@
 <!DOCTYPE html>
 
-<html prefix="og: http://ogp.me/ns#" lang="en">
+<html prefix="og: http://ogp.me/ns#" lang="fr">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Mattéo Legagneux">
-		<meta name="description" content="Welcome to my portfolio.">
+		<meta name="description" content="Mattéo Legagneux's portfolio">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://debaze.github.io/debaze">
 		<meta property="og:site_name" content="GitHub">
 		<meta property="og:title" content="Portfolio · Mattéo Legagneux">
-		<meta property="og:description" content="Welcome to my portfolio.">
+		<meta property="og:description" content="Mattéo Legagneux's portfolio">
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 		<script type="module" src="assets/js/main.js"></script>
 		<title>Portfolio · Mattéo Legagneux</title>
 	</head>
 
 	<body>
-		<article>
-			<header>
-				<small>
+		<article class="article">
+			<header class="header">
+				<small class="header-name">
 					Mattéo Legagneux
 				</small>
 
-				<h1>
+				<h1 class="header-title">
 					Portfolio
 				</h1>
 			</header>
 
-			<section>
+			<section id="skill-section">
 				<h1>
 					Compétences
 				</h1>
 
-				<h2>
-					Langages, frameworks et APIs
-				</h2>
-
-				<ul>
-					<li>
-						JavaScript
-
-						<ul>
-							<li>WebGL</li>
-							<li>WebGPU</li>
-							<li>React</li>
-							<li>Angular</li>
-						</ul>
-					</li>
-
-					<li>
-						PHP
-
-						<ul>
-							<li>Symfony</li>
-						</ul>
-					</li>
-
-					<li>SQL</li>
-
-					<li>
-						Dart
-
-						<ul>
-							<li>
-								Flutter
-
-								<ul>
-									<li>Riverpod</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-
-					<li>
-						C++
-
-						<ul>
-							<li>GLFW</li>
-							<li>GLM</li>
-							<li>WebGPU (Dawn/Emscripten)</li>
-						</ul>
-					</li>
-
-					<li>
-						Java
-
-						<ul>
-							<li>Spring</li>
-							<li>JDBC</li>
-							<li>JPA</li>
-						</ul>
-					</li>
-				</ul>
-
-				<h2>
-					IDEs
-				</h2>
-
-				<ul>
-					<li>Visual Studio Code</li>
-					<li>MSVC</li>
-					<li>Sublime Text</li>
-				</ul>
-
-				<h2>
-					Platformes
-				</h2>
-
-				<ul>
-					<li>Windows</li>
-					<li>Mac</li>
-					<li>Linux (Ubuntu)</li>
-				</ul>
-
-				<h2>
-					Versioning
-				</h2>
-
-				<ul>
-					<li>Git (GitHub)</li>
-				</ul>
+				<div id="skill-category-list-placeholder"></div>
 			</section>
 
 			<section id="experience-section">
@@ -142,7 +55,13 @@
 			</a>
 		</article>
 
-		<template id="project-template">
+		<template id="data-template">
+			<section class="skill-category-container">
+				<h2 class="skill-category-name"></h2>
+
+				<ul class="skill-list"></ul>
+			</section>
+
 			<section class="experience-container">
 				<h2 class="experience-name"></h2>
 
@@ -150,6 +69,16 @@
 
 				<ul class="experience-project-list"></ul>
 			</section>
+
+			<li class="skill-list-item">
+				<div class="skill-technology-container">
+					<img src="" alt="" class="technology-icon" />
+
+					<span class="technology-name"></span>
+				</div>
+
+				<ul class="skill-list"></ul>
+			</li>
 
 			<li class="project-list-item">
 				<ul class="project-category-list"></ul>
@@ -163,8 +92,8 @@
 				<ul class="project-technology-list"></ul>
 			</li>
 
-			<li class="category-list-item">
-				<span class="category-name"></span>
+			<li class="project-category-list-item">
+				<span class="project-category-name"></span>
 			</li>
 
 			<span class="project-name"></span>

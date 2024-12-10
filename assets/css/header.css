@@ -1,14 +1,16 @@
-header {
-	/* background: orange; */
-}
-
-header small {
+.header-name {
 	font-family: "PPRadioGrotesk-Black";
 	font-size: 1.25rem;
 }
 
-header h1 {
+.header-title {
 	margin-top: 0;
 	font-family: "PPRadioGrotesk-Black";
-	font-size: 3rem;
+	font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+	.header-title {
+		font-size: 3rem;
+	}
 }
