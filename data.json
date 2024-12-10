@@ -651,6 +651,13 @@
 					"technologyIds": [12]
 				},
 				{
+					"name": "Raytracing",
+					"url": "https://debaze.github.io/webgpu_raytracer",
+					"sourceUrl": "https://github.com/debaze/webgpu_raytracer",
+					"categoryIds": [10],
+					"technologyIds": [12, 29]
+				},
+				{
 					"name": "Enhanced GJK (2D)",
 					"url": "https://debaze.github.io/gjk",
 					"sourceUrl": "https://github.com/debaze/gjk",
