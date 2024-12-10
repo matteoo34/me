@@ -671,10 +671,11 @@
 			"projects": [
 				{
 					"name": "Quiver",
+					"url": "https://debaze.github.io/Quiver",
 					"sourceUrl": "https://github.com/debaze/Quiver",
 					"description": "Rogue-like en solo",
 					"categoryIds": [11],
-					"technologyIds": [19, 12, 13]
+					"technologyIds": [19, 12]
 				},
 				{
 					"name": "Crocosmaute",
