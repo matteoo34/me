@@ -633,6 +633,13 @@
 					"technologyIds": [12, 22]
 				},
 				{
+					"name": "Lyah",
+					"sourceUrl": "https://github.com/debaze/lyah",
+					"description": "Mathématiques vectorielles (SIMD)",
+					"categoryIds": [9],
+					"technologyIds": [26]
+				},
+				{
 					"name": "Project A",
 					"description": "Moteur de jeu (en cours de développement)",
 					"categoryIds": [13],
